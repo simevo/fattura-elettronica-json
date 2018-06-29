@@ -1,0 +1,13 @@
+{
+  "name": "fattura-elettronica-json",
+  "version": "0.0.1",
+  "description": "Rappresentazione JSON per le fatture elettroniche",
+  "main": "bin/index.html",
+  "repository": "https://github.com/simevo/fattura-elettronica-json",
+  "author": "Paolo Greppi simevo s.r.l.",
+  "license": "BSD-3-clause",
+  "dependencies": {
+    "@json-editor/json-editor": "^1.1.0-beta.1",
+    "jgexml": "^0.3.8"
+  }
+}

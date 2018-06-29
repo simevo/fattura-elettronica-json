@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8">
+    <title>Editor semplice per fattura elettronica</title>
+    <script src="js/jsoneditor.min.js"></script>
+  </head>
+  <body>
+    <h1>Editor semplice per fattura elettronica</h1>
+
+    <div id='editor_holder'></div>
+    <button id='submit'>Submit (console.log)</button>
+
+    <script>
+      // Initialize the editor with a JSON schema
+      var editor = new JSONEditor(document.getElementById('editor_holder'), {
+        // Enable fetching schemas via ajax
+        ajax: true,
+        // The schema for the editor
+        schema: {
+          $ref: "fatturaPA_1.2_schema_semplificato.json"
+        }
+      });
+
+      // Hook up the submit button to log to the console
+      document.getElementById('submit').addEventListener('click',function() {
+        // Get the value from the editor
+        console.log(editor.getValue());
+      });
+    </script>
+  </body>
+</html>
