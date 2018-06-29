@@ -18,13 +18,27 @@ nodejs ./node_modules/jgexml/testxsd2j.js Schema_del_file_xml_FatturaPA_versione
 ```
 ottenendo però uno schema non utilizzabile.
 
-Successivamente i files XML di esempio "Fattura singola verso soggetto privato con più linee di dettaglio" (IT01234567890_FPR02.xml) e "Fattura singola verso PA con una sola linea di dettaglio" (IT01234567890_FPA01.xml) sono stati convertiti a JSON per mezzo della libreria [node-xml2json](https://github.com/buglabs/node-xml2json) con i comandi:
+Successivamente i files XML di esempio sono stati convertiti a JSON per mezzo della libreria [node-xml2json](https://github.com/buglabs/node-xml2json) con i comandi:
 ```
-./bin/xml2json.js IT01234567890_FPR02.xml | grep -v 'xmlns:' | grep -v 'xsi:' > IT01234567890_FPR02.json
-./bin/xml2json.js IT01234567890_FPA01.xml | grep -v 'xmlns:' | grep -v 'xsi:' > IT01234567890_FPA01.json
+./bin/xml2json.js IT01234567890_FPR01.xml | grep -v 'xmlns:' | grep -v 'xsi:' | sed 's/p:FatturaElettronica/FatturaElettronica/g' > IT01234567890_FPR01.json
+./bin/xml2json.js IT01234567890_FPR02.xml | grep -v 'xmlns:' | grep -v 'xsi:' | sed 's/p:FatturaElettronica/FatturaElettronica/g' > IT01234567890_FPR02.json
+./bin/xml2json.js IT01234567890_FPR03.xml | grep -v 'xmlns:' | grep -v 'xsi:' | sed 's/p:FatturaElettronica/FatturaElettronica/g' > IT01234567890_FPR03.json
+./bin/xml2json.js IT01234567890_FPA01.xml | grep -v 'xmlns:' | grep -v 'xsi:' | sed 's/p:FatturaElettronica/FatturaElettronica/g' > IT01234567890_FPA01.json
+./bin/xml2json.js IT01234567890_FPA02.xml | grep -v 'xmlns:' | grep -v 'xsi:' | sed 's/p:FatturaElettronica/FatturaElettronica/g' > IT01234567890_FPA02.json
+./bin/xml2json.js IT01234567890_FPA03.xml | grep -v 'xmlns:' | grep -v 'xsi:' | sed 's/p:FatturaElettronica/FatturaElettronica/g' > IT01234567890_FPA03.json
 ```
 
+Questa conversione automatica funziona più o meno, ma c'è un intoppo per quegli elementi che possono ripetersi (es. `FatturaElettronica.FatturaElettronicaBody` e `FatturaElettronica.FatturaElettronicaBody[1].DatiBeniServizi.DettaglioLinee`), nel caso ve ne sia uno solo la conversione genera un JSON dove invece di un `array` ci è un `object` vedi:
+- https://social.msdn.microsoft.com/Forums/windowsapps/en-US/03fe9c57-b7a8-41aa-ade4-652b6b5eafc3/single-element-xml-to-json-array
+- http://jersey.576304.n2.nabble.com/Single-Element-Arrays-and-JSON-td5532105.html
+Per questi casi occorre wrappare manualmente l'`object` con `[]`.
+
 Si è quindi generato uno schema a partire dai files fattura JSON di esempio, per mezzo del servizio on-line [jsonschema](https://www.jsonschema.net/), che dopo semplificazione (`grep -v '$id'`) e aggiunta di campi `title` e `description` desunti dalle SPECIFICHE TECNICHE OPERATIVE DEL FORMATO DELLA FATTURA DEL SISTEMA DI INTERSCAMBIO ha dato origine allo schema `www/fatturaPA_1.2_schema_semplificato.json`.
+
+Tutti i files di esempio JSON sono validati dallo schema come si può verificare con:
+```
+bin/validate.js
+```
 
 ## Demo
 
@@ -38,8 +52,6 @@ python -m SimpleHTTPServer
 visitare http://localhost:8000/www/index.html
 
 ## TODO
-
-- convertire a JSON gli altri files fattura XML di esempio
 
 - completare lo schema
 

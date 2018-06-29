@@ -1,6 +1,6 @@
 {
   "FatturaElettronica": {
-    "versione": "FPA12",
+    "versione": "FPR12",
     "FatturaElettronicaHeader": {
       "DatiTrasmissione": {
         "IdTrasmittente": {
@@ -8,8 +8,9 @@
           "IdCodice": "01234567890"
         },
         "ProgressivoInvio": "00001",
-        "FormatoTrasmissione": "FPA12",
-        "CodiceDestinatario": "AAAAAA"
+        "FormatoTrasmissione": "FPR12",
+        "CodiceDestinatario": "ABC1234",
+        "ContattiTrasmittente": {}
       },
       "CedentePrestatore": {
         "DatiAnagrafici": {
@@ -18,7 +19,7 @@
             "IdCodice": "01234567890"
           },
           "Anagrafica": {
-            "Denominazione": "ALPHA SRL"
+            "Denominazione": "SOCIETA' ALPHA SRL"
           },
           "RegimeFiscale": "RF19"
         },
@@ -34,7 +35,7 @@
         "DatiAnagrafici": {
           "CodiceFiscale": "09876543210",
           "Anagrafica": {
-            "Denominazione": "AMMINISTRAZIONE BETA"
+            "Denominazione": "DITTA BETA"
           }
         },
         "Sede": {
@@ -52,7 +53,7 @@
           "DatiGeneraliDocumento": {
             "TipoDocumento": "TD01",
             "Divisa": "EUR",
-            "Data": "2017-01-18",
+            "Data": "2014-12-18",
             "Numero": "123",
             "Causale": [
               "LA FATTURA FA RIFERIMENTO AD UNA OPERAZIONE AAAA BBBBBBBBBBBBBBBBBB CCC DDDDDDDDDDDDDDD E FFFFFFFFFFFFFFFFFFFF GGGGGGGGGG HHHHHHH II LLLLLLLLLLLLLLLLL MMM NNNNN OO PPPPPPPPPPP QQQQ RRRR SSSSSSSSSSSSSS",
@@ -62,28 +63,12 @@
           "DatiOrdineAcquisto": {
             "RiferimentoNumeroLinea": "1",
             "IdDocumento": "66685",
-            "NumItem": "1",
-            "CodiceCUP": "123abc",
-            "CodiceCIG": "456def"
+            "NumItem": "1"
           },
           "DatiContratto": {
             "RiferimentoNumeroLinea": "1",
             "IdDocumento": "123",
-            "Data": "2016-09-01",
-            "NumItem": "5",
-            "CodiceCUP": "123abc",
-            "CodiceCIG": "456def"
-          },
-          "DatiConvenzione": {
-            "RiferimentoNumeroLinea": "1",
-            "IdDocumento": "456",
-            "NumItem": "5",
-            "CodiceCUP": "123abc",
-            "CodiceCIG": "456def"
-          },
-          "DatiRicezione": {
-            "RiferimentoNumeroLinea": "1",
-            "IdDocumento": "789",
+            "Data": "2012-09-01",
             "NumItem": "5",
             "CodiceCUP": "123abc",
             "CodiceCIG": "456def"
@@ -98,7 +83,7 @@
                 "Denominazione": "Trasporto spa"
               }
             },
-            "DataOraConsegna": "2017-01-10T16:46:12.000+02:00"
+            "DataOraConsegna": "2012-10-22T16:46:12.000+02:00"
           }
         },
         "DatiBeniServizi": {
@@ -123,7 +108,7 @@
           "CondizioniPagamento": "TP01",
           "DettaglioPagamento": {
             "ModalitaPagamento": "MP01",
-            "DataScadenzaPagamento": "2017-02-18",
+            "DataScadenzaPagamento": "2015-01-30",
             "ImportoPagamento": "6.10"
           }
         }

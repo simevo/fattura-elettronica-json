@@ -9,8 +9,8 @@
         },
         "ProgressivoInvio": "00001",
         "FormatoTrasmissione": "FPR12",
-        "CodiceDestinatario": "0000000",
-        "PECDestinatario": "betagamma@pec.it"
+        "CodiceDestinatario": "ABC1234",
+        "ContattiTrasmittente": {}
       },
       "CedentePrestatore": {
         "DatiAnagrafici": {
@@ -99,9 +99,9 @@
           ],
           "DatiRiepilogo": {
             "AliquotaIVA": "22.00",
-            "ImponibileImporto": "25.00",
-            "Imposta": "5.50",
-            "EsigibilitaIVA": "D"
+            "ImponibileImporto": "27.00",
+            "Imposta": "5.95",
+            "EsigibilitaIVA": "I"
           }
         },
         "DatiPagamento": {
@@ -109,7 +109,51 @@
           "DettaglioPagamento": {
             "ModalitaPagamento": "MP01",
             "DataScadenzaPagamento": "2015-01-30",
-            "ImportoPagamento": "30.50"
+            "ImportoPagamento": "32.95"
+          }
+        }
+      },
+      {
+        "DatiGenerali": {
+          "DatiGeneraliDocumento": {
+            "TipoDocumento": "TD01",
+            "Divisa": "EUR",
+            "Data": "2014-12-20",
+            "Numero": "456",
+            "Causale": [
+              "LA FATTURA FA RIFERIMENTO AD UNA OPERAZIONE AAAA BBBBBBBBBBBBBBBBBB CCC DDDDDDDDDDDDDDD E FFFFFFFFFFFFFFFFFFFF GGGGGGGGGG HHHHHHH II LLLLLLLLLLLLLLLLL MMM NNNNN OO PPPPPPPPPPP QQQQ RRRR SSSSSSSSSSSSSS",
+              "SEGUE DESCRIZIONE CAUSALE NEL CASO IN CUI NON SIANO STATI SUFFICIENTI 200 CARATTERI AAAAAAAAAAA BBBBBBBBBBBBBBBBB"
+            ]
+          },
+          "DatiOrdineAcquisto": {
+            "RiferimentoNumeroLinea": "1",
+            "IdDocumento": "66685",
+            "NumItem": "1"
+          }
+        },
+        "DatiBeniServizi": {
+          "DettaglioLinee": [
+            {
+              "NumeroLinea": "1",
+              "Descrizione": "PRESTAZIONE DEL SEGUENTE SERVIZIO PROFESSIONALE: LA DESCRIZIONE DELLA PRESTAZIONE PUO' SUPERARE I CENTO CARATTERI CHE RAPPRESENTAVANO IL PRECEDENTE LIMITE DIMENSIONALE. TALE LIMITE NELLA NUOVA VERSIONE E' STATO PORTATO A MILLE CARATTERI",
+              "PrezzoUnitario": "2000.00",
+              "PrezzoTotale": "2000.00",
+              "AliquotaIVA": "22.00"
+            }
+          ],
+          "DatiRiepilogo": {
+            "AliquotaIVA": "22.00",
+            "ImponibileImporto": "2000.00",
+            "Imposta": "440.00",
+            "EsigibilitaIVA": "I"
+          }
+        },
+        "DatiPagamento": {
+          "CondizioniPagamento": "TP01",
+          "DettaglioPagamento": {
+            "ModalitaPagamento": "MP19",
+            "DataScadenzaPagamento": "2015-01-28",
+            "ImportoPagamento": "2440.00"
           }
         }
       }

@@ -20,7 +20,7 @@
           "Anagrafica": {
             "Denominazione": "ALPHA SRL"
           },
-          "RegimeFiscale": "RF19"
+          "RegimeFiscale": "RF01"
         },
         "Sede": {
           "Indirizzo": "VIALE ROMA 543",
@@ -53,7 +53,7 @@
             "TipoDocumento": "TD01",
             "Divisa": "EUR",
             "Data": "2017-01-18",
-            "Numero": "123",
+            "Numero": "12",
             "Causale": [
               "LA FATTURA FA RIFERIMENTO AD UNA OPERAZIONE AAAA BBBBBBBBBBBBBBBBBB CCC DDDDDDDDDDDDDDD E FFFFFFFFFFFFFFFFFFFF GGGGGGGGGG HHHHHHH II LLLLLLLLLLLLLLLLL MMM NNNNN OO PPPPPPPPPPP QQQQ RRRR SSSSSSSSSSSSSS",
               "SEGUE DESCRIZIONE CAUSALE NEL CASO IN CUI NON SIANO STATI SUFFICIENTI 200 CARATTERI AAAAAAAAAAA BBBBBBBBBBBBBBBBB"
@@ -69,7 +69,7 @@
           "DatiContratto": {
             "RiferimentoNumeroLinea": "1",
             "IdDocumento": "123",
-            "Data": "2016-09-01",
+            "Data": "2012-09-01",
             "NumItem": "5",
             "CodiceCUP": "123abc",
             "CodiceCIG": "456def"
@@ -105,17 +105,25 @@
           "DettaglioLinee": [
             {
               "NumeroLinea": "1",
-              "Descrizione": "DESCRIZIONE DELLA FORNITURA",
+              "Descrizione": "LA DESCRIZIONE DELLA FORNITURA PUO' SUPERARE I CENTO CARATTERI CHE RAPPRESENTAVANO IL PRECEDENTE LIMITE DIMENSIONALE. TALE LIMITE NELLA NUOVA VERSIONE E' STATO PORTATO A MILLE CARATTERI",
               "Quantita": "5.00",
               "PrezzoUnitario": "1.00",
               "PrezzoTotale": "5.00",
+              "AliquotaIVA": "22.00"
+            },
+            {
+              "NumeroLinea": "2",
+              "Descrizione": "FORNITURE VARIE PER UFFICIO",
+              "Quantita": "10.00",
+              "PrezzoUnitario": "2.00",
+              "PrezzoTotale": "20.00",
               "AliquotaIVA": "22.00"
             }
           ],
           "DatiRiepilogo": {
             "AliquotaIVA": "22.00",
-            "ImponibileImporto": "5.00",
-            "Imposta": "1.10",
+            "ImponibileImporto": "25.00",
+            "Imposta": "5.50",
             "EsigibilitaIVA": "I"
           }
         },
@@ -124,7 +132,75 @@
           "DettaglioPagamento": {
             "ModalitaPagamento": "MP01",
             "DataScadenzaPagamento": "2017-02-18",
-            "ImportoPagamento": "6.10"
+            "ImportoPagamento": "30.50"
+          }
+        }
+      },
+      {
+        "DatiGenerali": {
+          "DatiGeneraliDocumento": {
+            "TipoDocumento": "TD01",
+            "Divisa": "EUR",
+            "Data": "2017-01-20",
+            "Numero": "456",
+            "Causale": [
+              "LA FATTURA FA RIFERIMENTO AD UNA OPERAZIONE AAAA BBBBBBBBBBBBBBBBBB CCC DDDDDDDDDDDDDDD E FFFFFFFFFFFFFFFFFFFF GGGGGGGGGG HHHHHHH II LLLLLLLLLLLLLLLLL MMM NNNNN OO PPPPPPPPPPP QQQQ RRRR SSSSSSSSSSSSSS",
+              "SEGUE DESCRIZIONE CAUSALE NEL CASO IN CUI NON SIANO STATI SUFFICIENTI 200 CARATTERI AAAAAAAAAAA BBBBBBBBBBBBBBBBB"
+            ]
+          },
+          "DatiOrdineAcquisto": {
+            "RiferimentoNumeroLinea": "1",
+            "IdDocumento": "85666",
+            "NumItem": "1",
+            "CodiceCUP": "123abc",
+            "CodiceCIG": "456def"
+          },
+          "DatiContratto": {
+            "RiferimentoNumeroLinea": "1",
+            "IdDocumento": "321",
+            "Data": "2016-09-01",
+            "NumItem": "5",
+            "CodiceCUP": "123abc",
+            "CodiceCIG": "456def"
+          },
+          "DatiConvenzione": {
+            "RiferimentoNumeroLinea": "1",
+            "IdDocumento": "654",
+            "NumItem": "5",
+            "CodiceCUP": "123abc",
+            "CodiceCIG": "456def"
+          },
+          "DatiRicezione": {
+            "RiferimentoNumeroLinea": "1",
+            "IdDocumento": "987",
+            "NumItem": "5",
+            "CodiceCUP": "123abc",
+            "CodiceCIG": "456def"
+          }
+        },
+        "DatiBeniServizi": {
+          "DettaglioLinee": [
+            {
+              "NumeroLinea": "1",
+              "Descrizione": "PRESTAZIONE DEL SEGUENTE SERVIZIO PROFESSIONALE: LA DESCRIZIONE DELLA PRESTAZIONE PUO' SUPERARE I CENTO CARATTERI CHE RAPPRESENTAVANO IL PRECEDENTE LIMITE DIMENSIONALE. TALE LIMITE NELLA NUOVA VERSIONE E' STATO PORTATO A MILLE CARATTERI",
+              "PrezzoUnitario": "2000.00",
+              "PrezzoTotale": "2000.00",
+              "AliquotaIVA": "22.00"
+            }
+          ],
+          "DatiRiepilogo": {
+            "AliquotaIVA": "22.00",
+            "ImponibileImporto": "2000.00",
+            "Imposta": "440.00",
+            "EsigibilitaIVA": "I"
+          }
+        },
+        "DatiPagamento": {
+          "CondizioniPagamento": "TP01",
+          "DettaglioPagamento": {
+            "ModalitaPagamento": "MP19",
+            "DataScadenzaPagamento": "2017-02-20",
+            "ImportoPagamento": "2440.00"
           }
         }
       }

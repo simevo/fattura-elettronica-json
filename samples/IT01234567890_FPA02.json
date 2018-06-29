@@ -20,7 +20,7 @@
           "Anagrafica": {
             "Denominazione": "ALPHA SRL"
           },
-          "RegimeFiscale": "RF19"
+          "RegimeFiscale": "RF01"
         },
         "Sede": {
           "Indirizzo": "VIALE ROMA 543",
@@ -105,26 +105,34 @@
           "DettaglioLinee": [
             {
               "NumeroLinea": "1",
-              "Descrizione": "DESCRIZIONE DELLA FORNITURA",
+              "Descrizione": "LA DESCRIZIONE DELLA FORNITURA PUO' SUPERARE I CENTO CARATTERI CHE RAPPRESENTAVANO IL PRECEDENTE LIMITE DIMENSIONALE. TALE LIMITE NELLA NUOVA VERSIONE E' STATO PORTATO A MILLE CARATTERI",
               "Quantita": "5.00",
               "PrezzoUnitario": "1.00",
               "PrezzoTotale": "5.00",
+              "AliquotaIVA": "22.00"
+            },
+            {
+              "NumeroLinea": "2",
+              "Descrizione": "FORNITURE VARIE PER UFFICIO",
+              "Quantita": "10.00",
+              "PrezzoUnitario": "2.00",
+              "PrezzoTotale": "20.00",
               "AliquotaIVA": "22.00"
             }
           ],
           "DatiRiepilogo": {
             "AliquotaIVA": "22.00",
-            "ImponibileImporto": "5.00",
-            "Imposta": "1.10",
-            "EsigibilitaIVA": "I"
+            "ImponibileImporto": "25.00",
+            "Imposta": "5.50",
+            "EsigibilitaIVA": "D"
           }
         },
         "DatiPagamento": {
           "CondizioniPagamento": "TP01",
           "DettaglioPagamento": {
             "ModalitaPagamento": "MP01",
-            "DataScadenzaPagamento": "2017-02-18",
-            "ImportoPagamento": "6.10"
+            "DataScadenzaPagamento": "2017-02-30",
+            "ImportoPagamento": "30.50"
           }
         }
       }
