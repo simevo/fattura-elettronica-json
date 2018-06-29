@@ -55,8 +55,6 @@ visitare http://localhost:8000/www/index.html
 
 - completare lo schema
 
-- aggiungere funzione per caricare file JSON esistente
-
 - aggiungere funzioni all'editor usando [le estensioni allo schema JSON specifiche di JSON Editor](https://github.com/json-editor/json-editor#json-schema-support)
 
 - testare editor basato su specifici fronr-end frameworks:
@@ -66,8 +64,6 @@ visitare http://localhost:8000/www/index.html
   - react, es: https://github.com/mozilla-services/react-jsonschema-form
 
   - angular, es: https://github.com/json-schema-form/angular-schema-form
-
-- aggiungere funzione di export a XML (idea: usare un template client-side tipo moustache che infila i campi presenti nel JSON in uno schema di file XML)
 
 - aggiungere funzione di import di un file XML esistente
 

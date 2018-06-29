@@ -4,13 +4,48 @@
     <meta charset="UTF-8">
     <title>Editor semplice per fattura elettronica</title>
     <script src="js/jsoneditor.min.js"></script>
+    <script src="js/handlebars.min.js"></script>
+    <style>
+    pre { background-color: gray; width: 100%; overflow: hidden; }
+    </style>
   </head>
   <body>
     <h1>Editor semplice per fattura elettronica</h1>
 
-    <div id='editor_holder'></div>
-    <button id='submit'>Submit (console.log)</button>
+    <button id='genera'>Genera e visualizza la fattura in formato XML</button>
+    <pre id="xml"></pre>
 
+    <div id='editor_holder'></div>
+
+    <script id="fattura-template" type="text/x-handlebars-template"><?xml version="1.0" encoding="UTF-8"?>
+<p:FatturaElettronica versione="{{versione}}" xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
+xmlns:p="http://ivaservizi.agenziaentrate.gov.it/docs/xsd/fatture/v1.2"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://ivaservizi.agenziaentrate.gov.it/docs/xsd/fatture/v1.2 http://www.fatturapa.gov.it/export/fatturazione/sdi/fatturapa/v1.2/Schema_del_file_xml_FatturaPA_versione_1.2.xsd">
+  <FatturaElettronicaHeader>
+    <DatiTrasmissione>
+      <IdTrasmittente>
+        <IdPaese>{{FatturaElettronicaHeader.DatiTrasmissione.IdTrasmittente.IdPaese}}</IdPaese>
+        <IdCodice>{{FatturaElettronicaHeader.DatiTrasmissione.IdTrasmittente.IdCodice}}</IdCodice>
+      </IdTrasmittente>
+    </DatiTrasmissione>
+  </FatturaElettronicaHeader>
+  {{#each FatturaElettronicaBody}}
+  <FatturaElettronicaBody>
+    <DatiGenerali>
+      <DatiGeneraliDocumento>
+        <TipoDocumento>{{DatiGenerali.DatiGeneraliDocumento.TipoDocumento}}</TipoDocumento>
+        <Divisa>{{DatiGenerali.DatiGeneraliDocumento.Divisa}}</Divisa>
+        <Data>{{DatiGenerali.DatiGeneraliDocumento.Data}}</Data>
+        <Numero>{{DatiGenerali.DatiGeneraliDocumento.Numero}}</Numero>
+        {{#each DatiGenerali.DatiGeneraliDocumento.Causale}}
+        <Causale>{{this}}</Causale>
+        {{/each}}
+      </DatiGeneraliDocumento>
+    </DatiGenerali>
+  </FatturaElettronicaBody>
+  {{/each}}
+</p:FatturaElettronica></script>
     <script>
       // Initialize the editor with a JSON schema
       var editor = new JSONEditor(document.getElementById('editor_holder'), {
@@ -19,14 +54,30 @@
         // The schema for the editor
         schema: {
           $ref: "fatturaPA_1.2_schema_semplificato.json"
-        }
+        },
+      }).on('ready', function() {
+        // Initialize the value
+        var request = new XMLHttpRequest();
+        request.open("GET", "IT01234567890_FPA01.json");
+        request.onload = function() {
+          if (request.status == 200) {
+            if (request.responseText) {
+              var dataFrom = JSON.parse(request.responseText);
+              editor.setValue(dataFrom);
+            }
+          }
+        };
+        request.send();
       });
 
-      // Hook up the submit button to log to the console
-      document.getElementById('submit').addEventListener('click',function() {
-        // Get the value from the editor
-        console.log(editor.getValue());
-      });
+      document.getElementById("genera").onclick = function() {
+        var source = document.getElementById("fattura-template").innerHTML;
+        var template = Handlebars.compile(source);
+        var context = editor.getValue().FatturaElettronica;
+        var xml = template(context);
+        document.getElementById("xml").innerText = xml;
+        console.log(xml);
+      };
     </script>
   </body>
 </html>
