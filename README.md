@@ -59,7 +59,7 @@ visitare http://localhost:8000/www/index.html
 
 - https://jsonlint.com/
 
-- http://json-schema.org/)
+- http://json-schema.org/
 
 - https://spacetelescope.github.io/understanding-json-schema/reference/index.html
 
