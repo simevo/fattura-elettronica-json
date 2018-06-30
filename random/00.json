@@ -1,0 +1,228 @@
+{
+  "FatturaElettronica": {
+    "versione": "FPR12",
+    "FatturaElettronicaHeader": {
+      "DatiTrasmissione": {
+        "IdTrasmittente": {
+          "IdPaese": "WV",
+          "IdCodice": "sunt"
+        },
+        "ProgressivoInvio": "elit adi",
+        "FormatoTrasmissione": "FPA12",
+        "CodiceDestinatario": "GHJ5X6"
+      },
+      "CedentePrestatore": {
+        "DatiAnagrafici": {
+          "IdFiscaleIVA": {
+            "IdPaese": "CR",
+            "IdCodice": "adipisicing et reprehenderi"
+          },
+          "Anagrafica": {
+            "Denominazione": "culpa",
+            "Nome": "culpa ipsum"
+          },
+          "RegimeFiscale": "RF33"
+        },
+        "Sede": {
+          "Indirizzo": "magna deserunt ut adipisicing in",
+          "CAP": "65841",
+          "Comune": "v",
+          "Nazione": "RO"
+        }
+      },
+      "CessionarioCommittente": {
+        "DatiAnagrafici": {
+          "Anagrafica": {
+            "Nome": "e",
+            "Cognome": "eu Excepteur et"
+          }
+        },
+        "Sede": {
+          "Indirizzo": "sint ut nulla",
+          "CAP": "81678",
+          "Comune": "nostrud sit nisi",
+          "Nazione": "GM"
+        }
+      }
+    },
+    "FatturaElettronicaBody": [
+      {
+        "DatiGenerali": {
+          "DatiGeneraliDocumento": {
+            "TipoDocumento": "TD24",
+            "Divisa": "KBI",
+            "Data": "6591-35-44",
+            "Numero": "laboris in amet p"
+          }
+        },
+        "DatiBeniServizi": {
+          "DettaglioLinee": [
+            {
+              "NumeroLinea": 8870,
+              "Descrizione": "reprehenderit tempor do",
+              "PrezzoUnitario": "-5352560.81",
+              "PrezzoTotale": "9783246413.8212443",
+              "AliquotaIVA": "07.43"
+            },
+            {
+              "NumeroLinea": 2019,
+              "Descrizione": "Lorem voluptate aliqua sit",
+              "PrezzoUnitario": "46.72637523",
+              "PrezzoTotale": "-66270513642.5390702",
+              "AliquotaIVA": "6.39"
+            },
+            {
+              "NumeroLinea": 1349,
+              "Descrizione": "laboris cupidatat",
+              "PrezzoUnitario": "42969094018.8571",
+              "PrezzoTotale": "-869.24158",
+              "AliquotaIVA": "9.08"
+            },
+            {
+              "NumeroLinea": 3220,
+              "Descrizione": "eu id in nostrud exercitation",
+              "PrezzoUnitario": "940537.38",
+              "PrezzoTotale": "309431.43193",
+              "AliquotaIVA": "96.59"
+            },
+            {
+              "NumeroLinea": 252,
+              "Descrizione": "eiusmod nostrud ut irure in",
+              "PrezzoUnitario": "0841860839.88",
+              "PrezzoTotale": "-167708787.1326",
+              "AliquotaIVA": "6.87"
+            }
+          ],
+          "DatiRiepilogo": [
+            {
+              "AliquotaIVA": "0.93",
+              "ImponibileImporto": "-49223539259.92",
+              "Imposta": "4383748027.49"
+            },
+            {
+              "AliquotaIVA": "5.52",
+              "ImponibileImporto": "-8210516.29",
+              "Imposta": "-68468006039.86"
+            }
+          ]
+        }
+      },
+      {
+        "DatiGenerali": {
+          "DatiGeneraliDocumento": {
+            "TipoDocumento": "TD74",
+            "Divisa": "NBB",
+            "Data": "5281-04-38",
+            "Numero": "sunt ipsum sed veni"
+          }
+        },
+        "DatiBeniServizi": {
+          "DettaglioLinee": [
+            {
+              "NumeroLinea": 315,
+              "Descrizione": "deserunt sit",
+              "PrezzoUnitario": "4140849.93908567",
+              "PrezzoTotale": "16273701.87123",
+              "AliquotaIVA": "29.92"
+            },
+            {
+              "NumeroLinea": 8344,
+              "Descrizione": "magna eiusmod tempor laborum",
+              "PrezzoUnitario": "-2803273.882584",
+              "PrezzoTotale": "-24.131",
+              "AliquotaIVA": "3.25"
+            },
+            {
+              "NumeroLinea": 4852,
+              "Descrizione": "mollit",
+              "PrezzoUnitario": "508911.90385154",
+              "PrezzoTotale": "5062233.472148",
+              "AliquotaIVA": "3.27"
+            }
+          ],
+          "DatiRiepilogo": [
+            {
+              "AliquotaIVA": "1.79",
+              "ImponibileImporto": "-9741029.54",
+              "Imposta": "70785256971.01"
+            },
+            {
+              "AliquotaIVA": "84.79",
+              "ImponibileImporto": "92756483.72",
+              "Imposta": "-1020532199.20"
+            },
+            {
+              "AliquotaIVA": "39.36",
+              "ImponibileImporto": "-51697612613.95",
+              "Imposta": "-784.40"
+            },
+            {
+              "AliquotaIVA": "5.68",
+              "ImponibileImporto": "001355.38",
+              "Imposta": "-48480.79"
+            }
+          ]
+        }
+      },
+      {
+        "DatiGenerali": {
+          "DatiGeneraliDocumento": {
+            "TipoDocumento": "TD85",
+            "Divisa": "RVM",
+            "Data": "8927-46-70",
+            "Numero": "esse"
+          }
+        },
+        "DatiBeniServizi": {
+          "DettaglioLinee": [
+            {
+              "NumeroLinea": 6295,
+              "Descrizione": "sunt ut est",
+              "PrezzoUnitario": "-4142.9397845",
+              "PrezzoTotale": "357.70384463",
+              "AliquotaIVA": "81.31"
+            },
+            {
+              "NumeroLinea": 2985,
+              "Descrizione": "sed",
+              "PrezzoUnitario": "77651488.09642",
+              "PrezzoTotale": "40841775.0684",
+              "AliquotaIVA": "1.88"
+            },
+            {
+              "NumeroLinea": 6152,
+              "Descrizione": "Lorem in",
+              "PrezzoUnitario": "59886451.533367",
+              "PrezzoTotale": "-5.27",
+              "AliquotaIVA": "73.93"
+            },
+            {
+              "NumeroLinea": 3307,
+              "Descrizione": "minim aliqua nulla pariatur",
+              "PrezzoUnitario": "50827702508.457342",
+              "PrezzoTotale": "-2.94363",
+              "AliquotaIVA": "0.53"
+            }
+          ],
+          "DatiRiepilogo": [
+            {
+              "AliquotaIVA": "54.77",
+              "ImponibileImporto": "83332.93",
+              "Imposta": "95.76"
+            },
+            {
+              "AliquotaIVA": "2.17",
+              "ImponibileImporto": "-4712.24",
+              "Imposta": "1580560945.58"
+            },
+            {
+              "AliquotaIVA": "2.48",
+              "ImponibileImporto": "-3894431260.37",
+              "Imposta": "12890962625.44"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

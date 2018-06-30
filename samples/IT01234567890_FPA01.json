@@ -59,35 +59,43 @@
               "SEGUE DESCRIZIONE CAUSALE NEL CASO IN CUI NON SIANO STATI SUFFICIENTI 200 CARATTERI AAAAAAAAAAA BBBBBBBBBBBBBBBBB"
             ]
           },
-          "DatiOrdineAcquisto": {
-            "RiferimentoNumeroLinea": "1",
-            "IdDocumento": "66685",
-            "NumItem": "1",
-            "CodiceCUP": "123abc",
-            "CodiceCIG": "456def"
-          },
-          "DatiContratto": {
-            "RiferimentoNumeroLinea": "1",
-            "IdDocumento": "123",
-            "Data": "2016-09-01",
-            "NumItem": "5",
-            "CodiceCUP": "123abc",
-            "CodiceCIG": "456def"
-          },
-          "DatiConvenzione": {
-            "RiferimentoNumeroLinea": "1",
-            "IdDocumento": "456",
-            "NumItem": "5",
-            "CodiceCUP": "123abc",
-            "CodiceCIG": "456def"
-          },
-          "DatiRicezione": {
-            "RiferimentoNumeroLinea": "1",
-            "IdDocumento": "789",
-            "NumItem": "5",
-            "CodiceCUP": "123abc",
-            "CodiceCIG": "456def"
-          },
+          "DatiOrdineAcquisto": [
+            {
+              "RiferimentoNumeroLinea": [1],
+              "IdDocumento": "66685",
+              "NumItem": "1",
+              "CodiceCUP": "123abc",
+              "CodiceCIG": "456def"
+            }
+          ],
+          "DatiContratto": [
+            {
+              "RiferimentoNumeroLinea": [1],
+              "IdDocumento": "123",
+              "Data": "2016-09-01",
+              "NumItem": "5",
+              "CodiceCUP": "123abc",
+              "CodiceCIG": "456def"
+            }
+          ],
+          "DatiConvenzione": [
+            {
+              "RiferimentoNumeroLinea": [1],
+              "IdDocumento": "456",
+              "NumItem": "5",
+              "CodiceCUP": "123abc",
+              "CodiceCIG": "456def"
+            }
+          ],
+          "DatiRicezione": [
+            {
+              "RiferimentoNumeroLinea": [1],
+              "IdDocumento": "789",
+              "NumItem": "5",
+              "CodiceCUP": "123abc",
+              "CodiceCIG": "456def"
+            }
+          ],
           "DatiTrasporto": {
             "DatiAnagraficiVettore": {
               "IdFiscaleIVA": {
@@ -104,7 +112,7 @@
         "DatiBeniServizi": {
           "DettaglioLinee": [
             {
-              "NumeroLinea": "1",
+              "NumeroLinea": 1,
               "Descrizione": "DESCRIZIONE DELLA FORNITURA",
               "Quantita": "5.00",
               "PrezzoUnitario": "1.00",
@@ -112,21 +120,25 @@
               "AliquotaIVA": "22.00"
             }
           ],
-          "DatiRiepilogo": {
-            "AliquotaIVA": "22.00",
-            "ImponibileImporto": "5.00",
-            "Imposta": "1.10",
-            "EsigibilitaIVA": "I"
-          }
+          "DatiRiepilogo": [
+            {
+              "AliquotaIVA": "22.00",
+              "ImponibileImporto": "5.00",
+              "Imposta": "1.10",
+              "EsigibilitaIVA": "I"
+            }
+          ]
         },
-        "DatiPagamento": {
-          "CondizioniPagamento": "TP01",
-          "DettaglioPagamento": {
-            "ModalitaPagamento": "MP01",
-            "DataScadenzaPagamento": "2017-02-18",
-            "ImportoPagamento": "6.10"
+        "DatiPagamento": [
+          {
+            "CondizioniPagamento": "TP01",
+            "DettaglioPagamento": {
+              "ModalitaPagamento": "MP01",
+              "DataScadenzaPagamento": "2017-02-18",
+              "ImportoPagamento": "6.10"
+            }
           }
-        }
+        ]
       }
     ]
   }

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<p:FatturaElettronica xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:p="http://ivaservizi.agenziaentrate.gov.it/docs/xsd/fatture/v1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" versione="FPR12" xsi:schemaLocation="http://ivaservizi.agenziaentrate.gov.it/docs/xsd/fatture/v1.2 http://www.fatturapa.gov.it/export/fatturazione/sdi/fatturapa/v1.2/Schema_del_file_xml_FatturaPA_versione_1.2.xsd">
+  <FatturaElettronicaHeader>
+    <DatiTrasmissione>
+      <IdTrasmittente>
+        <IdPaese>XL</IdPaese>
+        <IdCodice>anim enim culp</IdCodice>
+      </IdTrasmittente>
+      <ProgressivoInvio>aliqu</ProgressivoInvio>
+      <FormatoTrasmissione>FPA12</FormatoTrasmissione>
+      <CodiceDestinatario>aliqua </CodiceDestinatario>
+    </DatiTrasmissione>
+    <CedentePrestatore>
+      <DatiAnagrafici>
+        <IdFiscaleIVA>
+          <IdPaese>YO</IdPaese>
+          <IdCodice>offi</IdCodice>
+        </IdFiscaleIVA>
+        <Anagrafica>
+          <Denominazione>ut Ut dolor</Denominazione>
+          <Cognome>Excepteur ipsum sit laboris laborum</Cognome>
+        </Anagrafica>
+        <RegimeFiscale>RF13</RegimeFiscale>
+      </DatiAnagrafici>
+      <Sede>
+        <Indirizzo>enim sed non fugiat</Indirizzo>
+        <CAP>34960</CAP>
+        <Comune>ea incididunt qui enim</Comune>
+        <Nazione>PR</Nazione>
+      </Sede>
+    </CedentePrestatore>
+    <CessionarioCommittente>
+      <DatiAnagrafici>
+        <CodiceFiscale></CodiceFiscale>
+        <Anagrafica>
+          <Denominazione>veniam Lorem dolore do comm</Denominazione>
+          <Nome>nostrud dolor magna et</Nome>
+        </Anagrafica>
+      </DatiAnagrafici>
+      <Sede>
+        <Indirizzo>cupidatat velit </Indirizzo>
+        <CAP>28924</CAP>
+        <Comune>fugiat dolor</Comune>
+        <Nazione>UL</Nazione>
+      </Sede>
+    </CessionarioCommittente>
+  </FatturaElettronicaHeader>
+  <FatturaElettronicaBody>
+    <DatiGenerali>
+      <DatiGeneraliDocumento>
+        <TipoDocumento>TD88</TipoDocumento>
+        <Divisa>NJE</Divisa>
+        <Data>2148-41-34</Data>
+        <Numero>e</Numero>
+      </DatiGeneraliDocumento>
+    </DatiGenerali>
+    <DatiBeniServizi>
+      <DettaglioLinee>
+        <NumeroLinea>3561</NumeroLinea>
+        <Descrizione>ut pariatur</Descrizione>
+        <PrezzoUnitario>-91.8944</PrezzoUnitario>
+        <PrezzoTotale></PrezzoTotale>
+        <AliquotaIVA>919.30</AliquotaIVA>
+      </DettaglioLinee>
+      <DettaglioLinee>
+        <NumeroLinea>8496</NumeroLinea>
+        <Descrizione></Descrizione>
+        <Quantita>7.41989353</Quantita>
+        <PrezzoUnitario></PrezzoUnitario>
+        <PrezzoTotale>446476967.2163</PrezzoTotale>
+        <AliquotaIVA>14.30</AliquotaIVA>
+      </DettaglioLinee>
+      <DatiRiepilogo>
+        <AliquotaIVA></AliquotaIVA>
+        <ImponibileImporto>1158.60</ImponibileImporto>
+        <Imposta>85642038941.33</Imposta>
+        <EsigibilitaIVA>D</EsigibilitaIVA>
+      </DatiRiepilogo>
+      <DatiRiepilogo>
+        <AliquotaIVA>68.91</AliquotaIVA>
+        <ImponibileImporto>0.39</ImponibileImporto>
+        <Imposta>-457.74</Imposta>
+        <EsigibilitaIVA>S</EsigibilitaIVA>
+      </DatiRiepilogo>
+      <DatiRiepilogo>
+        <AliquotaIVA></AliquotaIVA>
+        <ImponibileImporto>644.37</ImponibileImporto>
+        <Imposta>934847468.93</Imposta>
+        <EsigibilitaIVA>D</EsigibilitaIVA>
+      </DatiRiepilogo>
+    </DatiBeniServizi>
+  </FatturaElettronicaBody>
+  <FatturaElettronicaBody>
+    <DatiGenerali>
+      <DatiGeneraliDocumento>
+        <TipoDocumento>TD30</TipoDocumento>
+        <Divisa>JMY</Divisa>
+        <Data>1743-95-75</Data>
+        <Numero>sit deserunt</Numero>
+      </DatiGeneraliDocumento>
+    </DatiGenerali>
+    <DatiBeniServizi>
+      <DettaglioLinee>
+        <NumeroLinea>3244</NumeroLinea>
+        <Descrizione>occaecat</Descrizione>
+        <Quantita>4618959.19956973</Quantita>
+        <PrezzoUnitario>9454312183.193629</PrezzoUnitario>
+        <PrezzoTotale></PrezzoTotale>
+        <AliquotaIVA></AliquotaIVA>
+      </DettaglioLinee>
+      <DettaglioLinee>
+        <NumeroLinea>7139</NumeroLinea>
+        <Descrizione>sed cupidatat sint</Descrizione>
+        <PrezzoUnitario></PrezzoUnitario>
+        <PrezzoTotale>85.594268</PrezzoTotale>
+        <AliquotaIVA>5.96</AliquotaIVA>
+      </DettaglioLinee>
+      <DettaglioLinee>
+        <NumeroLinea>2440</NumeroLinea>
+        <Descrizione>dolore magna</Descrizione>
+        <Quantita>63.590885</Quantita>
+        <PrezzoUnitario></PrezzoUnitario>
+        <PrezzoTotale></PrezzoTotale>
+        <AliquotaIVA>522.26</AliquotaIVA>
+      </DettaglioLinee>
+      <DatiRiepilogo>
+        <AliquotaIVA>2.55</AliquotaIVA>
+        <ImponibileImporto>-48284023105.17</ImponibileImporto>
+        <Imposta></Imposta>
+        <EsigibilitaIVA>I</EsigibilitaIVA>
+      </DatiRiepilogo>
+      <DatiRiepilogo>
+        <AliquotaIVA>2.03</AliquotaIVA>
+        <ImponibileImporto></ImponibileImporto>
+        <Imposta>-42963779557.43</Imposta>
+        <EsigibilitaIVA>S</EsigibilitaIVA>
+      </DatiRiepilogo>
+      <DatiRiepilogo>
+        <AliquotaIVA>87.34</AliquotaIVA>
+        <ImponibileImporto></ImponibileImporto>
+        <Imposta>-9881154869.73</Imposta>
+        <EsigibilitaIVA>S</EsigibilitaIVA>
+      </DatiRiepilogo>
+    </DatiBeniServizi>
+  </FatturaElettronicaBody>
+</p:FatturaElettronica>
+

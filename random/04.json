@@ -1,0 +1,311 @@
+{
+  "FatturaElettronica": {
+    "versione": "FPR12",
+    "FatturaElettronicaHeader": {
+      "DatiTrasmissione": {
+        "IdTrasmittente": {
+          "IdPaese": "KG",
+          "IdCodice": "esse quis"
+        },
+        "ProgressivoInvio": "labore occ",
+        "FormatoTrasmissione": "FPA12",
+        "CodiceDestinatario": "sed cu"
+      },
+      "CedentePrestatore": {
+        "DatiAnagrafici": {
+          "IdFiscaleIVA": {
+            "IdPaese": "WR",
+            "IdCodice": "sed"
+          },
+          "Anagrafica": {
+            "Nome": "si",
+            "Cognome": "fugiat dolor"
+          },
+          "RegimeFiscale": "RF73"
+        },
+        "Sede": {
+          "Indirizzo": "incididunt Lorem",
+          "CAP": "45852",
+          "Comune": "Ut nisi",
+          "Nazione": "VX"
+        }
+      },
+      "CessionarioCommittente": {
+        "DatiAnagrafici": {
+          "Anagrafica": {
+            "Denominazione": "lab",
+            "Cognome": "i"
+          }
+        },
+        "Sede": {
+          "Indirizzo": "deserunt dolore ",
+          "CAP": "27295",
+          "Comune": "consequat ut",
+          "Nazione": "ZP"
+        }
+      }
+    },
+    "FatturaElettronicaBody": [
+      {
+        "DatiGenerali": {
+          "DatiGeneraliDocumento": {
+            "TipoDocumento": "TD92",
+            "Divisa": "TMO",
+            "Data": "2418-22-62",
+            "Numero": "exer"
+          }
+        },
+        "DatiBeniServizi": {
+          "DettaglioLinee": [
+            {
+              "NumeroLinea": 827,
+              "Descrizione": "tempor dolore sit",
+              "PrezzoTotale": "-9558803.183",
+              "AliquotaIVA": "986.10"
+            },
+            {
+              "Descrizione": "reprehenderit est ut incididunt proident",
+              "PrezzoUnitario": "-8.728",
+              "PrezzoTotale": "0700.94",
+              "AliquotaIVA": "2.65"
+            },
+            {
+              "NumeroLinea": 323,
+              "Quantita": "525319802072.7168830",
+              "PrezzoUnitario": "8710616.2733",
+              "AliquotaIVA": "4.24"
+            },
+            {
+              "Descrizione": "anim in",
+              "PrezzoUnitario": "4495299853.47176598",
+              "PrezzoTotale": "-388190867.998",
+              "AliquotaIVA": "8.09"
+            }
+          ],
+          "DatiRiepilogo": [
+            {
+              "AliquotaIVA": "2.28",
+              "ImponibileImporto": "-632.01",
+              "Imposta": "-888993359.99",
+              "EsigibilitaIVA": "S"
+            },
+            {
+              "AliquotaIVA": "310.88",
+              "Natura": "N5",
+              "Imposta": "-46716580153.00",
+              "EsigibilitaIVA": "D"
+            },
+            {
+              "AliquotaIVA": "9.34",
+              "Natura": "N1",
+              "ImponibileImporto": "1355936231.77",
+              "EsigibilitaIVA": "S"
+            },
+            {
+              "AliquotaIVA": "143.03",
+              "Natura": "N6",
+              "ImponibileImporto": "051195.98",
+              "EsigibilitaIVA": "I"
+            }
+          ]
+        }
+      },
+      {
+        "DatiGenerali": {
+          "DatiGeneraliDocumento": {
+            "TipoDocumento": "TD61",
+            "Divisa": "XDI",
+            "Data": "6153-56-37",
+            "Numero": "laborum vel"
+          }
+        },
+        "DatiBeniServizi": {
+          "DettaglioLinee": [
+            {
+              "NumeroLinea": 2952,
+              "Descrizione": "in ex id dolor Excepteur",
+              "PrezzoUnitario": "-0978157664.57",
+              "PrezzoTotale": "6116.80"
+            }
+          ],
+          "DatiRiepilogo": [
+            {
+              "AliquotaIVA": "1.28",
+              "ImponibileImporto": "-08336.82",
+              "Imposta": "70246992.67",
+              "EsigibilitaIVA": "I"
+            },
+            {
+              "AliquotaIVA": "86.49",
+              "Natura": "N2",
+              "Imposta": "-973935419.71",
+              "EsigibilitaIVA": "S"
+            },
+            {
+              "AliquotaIVA": "2.86",
+              "Natura": "N5",
+              "ImponibileImporto": "-7312885.12",
+              "Imposta": "-61125.08"
+            },
+            {
+              "AliquotaIVA": "3.07",
+              "Natura": "N4",
+              "ImponibileImporto": "-62853826.35",
+              "EsigibilitaIVA": "D"
+            }
+          ]
+        }
+      },
+      {
+        "DatiGenerali": {
+          "DatiGeneraliDocumento": {
+            "TipoDocumento": "TD40",
+            "Divisa": "NYV",
+            "Data": "9796-17-57",
+            "Numero": "reprehenderit al"
+          }
+        },
+        "DatiBeniServizi": {
+          "DettaglioLinee": [
+            {
+              "Quantita": "106891996.95336741",
+              "PrezzoUnitario": "5765.935658",
+              "PrezzoTotale": "-107393592.01605",
+              "AliquotaIVA": "485.82"
+            },
+            {
+              "Descrizione": "in",
+              "PrezzoUnitario": "8406577502.95",
+              "PrezzoTotale": "82323.857",
+              "AliquotaIVA": "90.09"
+            }
+          ],
+          "DatiRiepilogo": [
+            {
+              "AliquotaIVA": "2.32",
+              "Natura": "N1",
+              "ImponibileImporto": "0971766.13",
+              "EsigibilitaIVA": "I"
+            },
+            {
+              "AliquotaIVA": "492.36",
+              "ImponibileImporto": "3.72",
+              "Imposta": "5189.12",
+              "EsigibilitaIVA": "S"
+            },
+            {
+              "AliquotaIVA": "168.09",
+              "ImponibileImporto": "-1.39",
+              "Imposta": "9875963.38",
+              "EsigibilitaIVA": "I"
+            }
+          ]
+        }
+      },
+      {
+        "DatiGenerali": {
+          "DatiGeneraliDocumento": {
+            "TipoDocumento": "TD35",
+            "Divisa": "ISV",
+            "Data": "9613-43-99",
+            "Numero": "sunt minim ipsum"
+          }
+        },
+        "DatiBeniServizi": {
+          "DettaglioLinee": [
+            {
+              "NumeroLinea": 3316,
+              "Quantita": "31010.17859317",
+              "PrezzoUnitario": "0715678.310198",
+              "AliquotaIVA": "47.84"
+            },
+            {
+              "Descrizione": "ut id dolor",
+              "PrezzoUnitario": "-8105.3945",
+              "PrezzoTotale": "30.82",
+              "AliquotaIVA": "45.16"
+            },
+            {
+              "Descrizione": "aliqua adipisicing in dolor ut",
+              "PrezzoUnitario": "66.923",
+              "PrezzoTotale": "-01222998.400",
+              "AliquotaIVA": "7.63"
+            }
+          ],
+          "DatiRiepilogo": [
+            {
+              "AliquotaIVA": "53.47",
+              "Natura": "N9",
+              "ImponibileImporto": "69.82",
+              "EsigibilitaIVA": "I"
+            },
+            {
+              "AliquotaIVA": "596.52",
+              "ImponibileImporto": "24583164.51",
+              "Imposta": "0268784.75",
+              "EsigibilitaIVA": "D"
+            },
+            {
+              "AliquotaIVA": "8.51",
+              "Natura": "N2",
+              "ImponibileImporto": "0047163013.81",
+              "EsigibilitaIVA": "I"
+            },
+            {
+              "Natura": "N2",
+              "ImponibileImporto": "-5452378.37",
+              "Imposta": "3851.76",
+              "EsigibilitaIVA": "I"
+            },
+            {
+              "AliquotaIVA": "5.58",
+              "Natura": "N7",
+              "Imposta": "17.62",
+              "EsigibilitaIVA": "S"
+            }
+          ]
+        }
+      },
+      {
+        "DatiGenerali": {
+          "DatiGeneraliDocumento": {
+            "TipoDocumento": "TD90",
+            "Divisa": "RDH",
+            "Data": "1866-39-39",
+            "Numero": "dolor"
+          }
+        },
+        "DatiBeniServizi": {
+          "DettaglioLinee": [
+            {
+              "NumeroLinea": 2827,
+              "Descrizione": "deserunt culpa",
+              "Quantita": "357.5298",
+              "PrezzoUnitario": "-5223964.3092"
+            },
+            {
+              "Descrizione": "est laborum",
+              "Quantita": "151141.662890",
+              "PrezzoUnitario": "1.37453969",
+              "PrezzoTotale": "-6880.594728"
+            }
+          ],
+          "DatiRiepilogo": [
+            {
+              "AliquotaIVA": "6.71",
+              "Natura": "N9",
+              "ImponibileImporto": "-7910.93",
+              "Imposta": "-5705472.75"
+            },
+            {
+              "Natura": "N7",
+              "ImponibileImporto": "9891409068.78",
+              "Imposta": "223592.59",
+              "EsigibilitaIVA": "S"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

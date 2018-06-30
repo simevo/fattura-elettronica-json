@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<p:FatturaElettronica xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:p="http://ivaservizi.agenziaentrate.gov.it/docs/xsd/fatture/v1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" versione="FPR12" xsi:schemaLocation="http://ivaservizi.agenziaentrate.gov.it/docs/xsd/fatture/v1.2 http://www.fatturapa.gov.it/export/fatturazione/sdi/fatturapa/v1.2/Schema_del_file_xml_FatturaPA_versione_1.2.xsd">
+  <FatturaElettronicaHeader>
+    <DatiTrasmissione>
+      <IdTrasmittente>
+        <IdPaese>WV</IdPaese>
+        <IdCodice>sunt</IdCodice>
+      </IdTrasmittente>
+      <ProgressivoInvio>elit adi</ProgressivoInvio>
+      <FormatoTrasmissione>FPA12</FormatoTrasmissione>
+      <CodiceDestinatario>GHJ5X6</CodiceDestinatario>
+    </DatiTrasmissione>
+    <CedentePrestatore>
+      <DatiAnagrafici>
+        <IdFiscaleIVA>
+          <IdPaese>CR</IdPaese>
+          <IdCodice>adipisicing et reprehenderi</IdCodice>
+        </IdFiscaleIVA>
+        <Anagrafica>
+          <Denominazione>culpa</Denominazione>
+          <Nome>culpa ipsum</Nome>
+        </Anagrafica>
+        <RegimeFiscale>RF33</RegimeFiscale>
+      </DatiAnagrafici>
+      <Sede>
+        <Indirizzo>magna deserunt ut adipisicing in</Indirizzo>
+        <CAP>65841</CAP>
+        <Comune>v</Comune>
+        <Nazione>RO</Nazione>
+      </Sede>
+    </CedentePrestatore>
+    <CessionarioCommittente>
+      <DatiAnagrafici>
+        <Anagrafica>
+          <Nome>e</Nome>
+          <Cognome>eu Excepteur et</Cognome>
+        </Anagrafica>
+      </DatiAnagrafici>
+      <Sede>
+        <Indirizzo>sint ut nulla</Indirizzo>
+        <CAP>81678</CAP>
+        <Comune>nostrud sit nisi</Comune>
+        <Nazione>GM</Nazione>
+      </Sede>
+    </CessionarioCommittente>
+  </FatturaElettronicaHeader>
+  <FatturaElettronicaBody>
+    <DatiGenerali>
+      <DatiGeneraliDocumento>
+        <TipoDocumento>TD24</TipoDocumento>
+        <Divisa>KBI</Divisa>
+        <Data>6591-35-44</Data>
+        <Numero>laboris in amet p</Numero>
+      </DatiGeneraliDocumento>
+    </DatiGenerali>
+    <DatiBeniServizi>
+      <DettaglioLinee>
+        <NumeroLinea>8870</NumeroLinea>
+        <Descrizione>reprehenderit tempor do</Descrizione>
+        <PrezzoUnitario>-5352560.81</PrezzoUnitario>
+        <PrezzoTotale>9783246413.8212443</PrezzoTotale>
+        <AliquotaIVA>07.43</AliquotaIVA>
+      </DettaglioLinee>
+      <DettaglioLinee>
+        <NumeroLinea>2019</NumeroLinea>
+        <Descrizione>Lorem voluptate aliqua sit</Descrizione>
+        <PrezzoUnitario>46.72637523</PrezzoUnitario>
+        <PrezzoTotale>-66270513642.5390702</PrezzoTotale>
+        <AliquotaIVA>6.39</AliquotaIVA>
+      </DettaglioLinee>
+      <DettaglioLinee>
+        <NumeroLinea>1349</NumeroLinea>
+        <Descrizione>laboris cupidatat</Descrizione>
+        <PrezzoUnitario>42969094018.8571</PrezzoUnitario>
+        <PrezzoTotale>-869.24158</PrezzoTotale>
+        <AliquotaIVA>9.08</AliquotaIVA>
+      </DettaglioLinee>
+      <DettaglioLinee>
+        <NumeroLinea>3220</NumeroLinea>
+        <Descrizione>eu id in nostrud exercitation</Descrizione>
+        <PrezzoUnitario>940537.38</PrezzoUnitario>
+        <PrezzoTotale>309431.43193</PrezzoTotale>
+        <AliquotaIVA>96.59</AliquotaIVA>
+      </DettaglioLinee>
+      <DettaglioLinee>
+        <NumeroLinea>252</NumeroLinea>
+        <Descrizione>eiusmod nostrud ut irure in</Descrizione>
+        <PrezzoUnitario>0841860839.88</PrezzoUnitario>
+        <PrezzoTotale>-167708787.1326</PrezzoTotale>
+        <AliquotaIVA>6.87</AliquotaIVA>
+      </DettaglioLinee>
+      <DatiRiepilogo>
+        <AliquotaIVA>0.93</AliquotaIVA>
+        <ImponibileImporto>-49223539259.92</ImponibileImporto>
+        <Imposta>4383748027.49</Imposta>
+      </DatiRiepilogo>
+      <DatiRiepilogo>
+        <AliquotaIVA>5.52</AliquotaIVA>
+        <ImponibileImporto>-8210516.29</ImponibileImporto>
+        <Imposta>-68468006039.86</Imposta>
+      </DatiRiepilogo>
+    </DatiBeniServizi>
+  </FatturaElettronicaBody>
+  <FatturaElettronicaBody>
+    <DatiGenerali>
+      <DatiGeneraliDocumento>
+        <TipoDocumento>TD74</TipoDocumento>
+        <Divisa>NBB</Divisa>
+        <Data>5281-04-38</Data>
+        <Numero>sunt ipsum sed veni</Numero>
+      </DatiGeneraliDocumento>
+    </DatiGenerali>
+    <DatiBeniServizi>
+      <DettaglioLinee>
+        <NumeroLinea>315</NumeroLinea>
+        <Descrizione>deserunt sit</Descrizione>
+        <PrezzoUnitario>4140849.93908567</PrezzoUnitario>
+        <PrezzoTotale>16273701.87123</PrezzoTotale>
+        <AliquotaIVA>29.92</AliquotaIVA>
+      </DettaglioLinee>
+      <DettaglioLinee>
+        <NumeroLinea>8344</NumeroLinea>
+        <Descrizione>magna eiusmod tempor laborum</Descrizione>
+        <PrezzoUnitario>-2803273.882584</PrezzoUnitario>
+        <PrezzoTotale>-24.131</PrezzoTotale>
+        <AliquotaIVA>3.25</AliquotaIVA>
+      </DettaglioLinee>
+      <DettaglioLinee>
+        <NumeroLinea>4852</NumeroLinea>
+        <Descrizione>mollit</Descrizione>
+        <PrezzoUnitario>508911.90385154</PrezzoUnitario>
+        <PrezzoTotale>5062233.472148</PrezzoTotale>
+        <AliquotaIVA>3.27</AliquotaIVA>
+      </DettaglioLinee>
+      <DatiRiepilogo>
+        <AliquotaIVA>1.79</AliquotaIVA>
+        <ImponibileImporto>-9741029.54</ImponibileImporto>
+        <Imposta>70785256971.01</Imposta>
+      </DatiRiepilogo>
+      <DatiRiepilogo>
+        <AliquotaIVA>84.79</AliquotaIVA>
+        <ImponibileImporto>92756483.72</ImponibileImporto>
+        <Imposta>-1020532199.20</Imposta>
+      </DatiRiepilogo>
+      <DatiRiepilogo>
+        <AliquotaIVA>39.36</AliquotaIVA>
+        <ImponibileImporto>-51697612613.95</ImponibileImporto>
+        <Imposta>-784.40</Imposta>
+      </DatiRiepilogo>
+      <DatiRiepilogo>
+        <AliquotaIVA>5.68</AliquotaIVA>
+        <ImponibileImporto>001355.38</ImponibileImporto>
+        <Imposta>-48480.79</Imposta>
+      </DatiRiepilogo>
+    </DatiBeniServizi>
+  </FatturaElettronicaBody>
+  <FatturaElettronicaBody>
+    <DatiGenerali>
+      <DatiGeneraliDocumento>
+        <TipoDocumento>TD85</TipoDocumento>
+        <Divisa>RVM</Divisa>
+        <Data>8927-46-70</Data>
+        <Numero>esse</Numero>
+      </DatiGeneraliDocumento>
+    </DatiGenerali>
+    <DatiBeniServizi>
+      <DettaglioLinee>
+        <NumeroLinea>6295</NumeroLinea>
+        <Descrizione>sunt ut est</Descrizione>
+        <PrezzoUnitario>-4142.9397845</PrezzoUnitario>
+        <PrezzoTotale>357.70384463</PrezzoTotale>
+        <AliquotaIVA>81.31</AliquotaIVA>
+      </DettaglioLinee>
+      <DettaglioLinee>
+        <NumeroLinea>2985</NumeroLinea>
+        <Descrizione>sed</Descrizione>
+        <PrezzoUnitario>77651488.09642</PrezzoUnitario>
+        <PrezzoTotale>40841775.0684</PrezzoTotale>
+        <AliquotaIVA>1.88</AliquotaIVA>
+      </DettaglioLinee>
+      <DettaglioLinee>
+        <NumeroLinea>6152</NumeroLinea>
+        <Descrizione>Lorem in</Descrizione>
+        <PrezzoUnitario>59886451.533367</PrezzoUnitario>
+        <PrezzoTotale>-5.27</PrezzoTotale>
+        <AliquotaIVA>73.93</AliquotaIVA>
+      </DettaglioLinee>
+      <DettaglioLinee>
+        <NumeroLinea>3307</NumeroLinea>
+        <Descrizione>minim aliqua nulla pariatur</Descrizione>
+        <PrezzoUnitario>50827702508.457342</PrezzoUnitario>
+        <PrezzoTotale>-2.94363</PrezzoTotale>
+        <AliquotaIVA>0.53</AliquotaIVA>
+      </DettaglioLinee>
+      <DatiRiepilogo>
+        <AliquotaIVA>54.77</AliquotaIVA>
+        <ImponibileImporto>83332.93</ImponibileImporto>
+        <Imposta>95.76</Imposta>
+      </DatiRiepilogo>
+      <DatiRiepilogo>
+        <AliquotaIVA>2.17</AliquotaIVA>
+        <ImponibileImporto>-4712.24</ImponibileImporto>
+        <Imposta>1580560945.58</Imposta>
+      </DatiRiepilogo>
+      <DatiRiepilogo>
+        <AliquotaIVA>2.48</AliquotaIVA>
+        <ImponibileImporto>-3894431260.37</ImponibileImporto>
+        <Imposta>12890962625.44</Imposta>
+      </DatiRiepilogo>
+    </DatiBeniServizi>
+  </FatturaElettronicaBody>
+</p:FatturaElettronica>
+

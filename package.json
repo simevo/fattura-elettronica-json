@@ -11,6 +11,7 @@
     "handlebars": "^4.0.11",
     "jgexml": "^0.3.8",
     "json-schema": "^0.2.3",
+    "json-schema-faker": "^0.5.0-rc15",
     "xml2json": "^0.11.2"
   }
 }

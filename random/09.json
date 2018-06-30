@@ -1,0 +1,185 @@
+{
+  "FatturaElettronica": {
+    "versione": "FPR12",
+    "FatturaElettronicaHeader": {
+      "DatiTrasmissione": {
+        "IdTrasmittente": {
+          "IdPaese": "AG",
+          "IdCodice": "do ullamco"
+        },
+        "ProgressivoInvio": "elit ",
+        "FormatoTrasmissione": "FPA12",
+        "CodiceDestinatario": "estmini"
+      },
+      "CedentePrestatore": {
+        "DatiAnagrafici": {
+          "IdFiscaleIVA": {
+            "IdPaese": "RZ",
+            "IdCodice": "esse ad m"
+          },
+          "Anagrafica": {
+            "Denominazione": "nostrud",
+            "Cognome": "deserunt qui"
+          },
+          "RegimeFiscale": "RF15"
+        },
+        "Sede": {
+          "Indirizzo": "esse sunt quis au",
+          "CAP": "97135",
+          "Comune": "occaecat esse",
+          "Nazione": "QN"
+        }
+      },
+      "CessionarioCommittente": {
+        "DatiAnagrafici": {
+          "Anagrafica": {
+            "Denominazione": "ullamco ame",
+            "Cognome": "tempor amet occaecat"
+          }
+        },
+        "Sede": {
+          "Indirizzo": "enim sint exercitation",
+          "CAP": "46747",
+          "Comune": "velit eiusmod mollit laborum qui",
+          "Nazione": "SF"
+        }
+      }
+    },
+    "FatturaElettronicaBody": [
+      {
+        "DatiGenerali": {
+          "DatiGeneraliDocumento": {
+            "TipoDocumento": "TD53",
+            "Divisa": "ZMY",
+            "Data": "4624-10-56",
+            "Numero": "quis dolore conse"
+          }
+        },
+        "DatiBeniServizi": {
+          "DettaglioLinee": [
+            {
+              "NumeroLinea": 4552,
+              "Descrizione": "cupidatat magna consectetur ipsum officia",
+              "PrezzoUnitario": "-4.09557",
+              "PrezzoTotale": "3.917560"
+            },
+            {
+              "NumeroLinea": 7807,
+              "Descrizione": "anim in",
+              "PrezzoTotale": "-52690.58",
+              "AliquotaIVA": "858.23"
+            },
+            {
+              "NumeroLinea": 9406,
+              "Descrizione": "sit",
+              "PrezzoUnitario": "341974.707",
+              "AliquotaIVA": "9.95"
+            }
+          ],
+          "DatiRiepilogo": [
+            {
+              "AliquotaIVA": "15.56",
+              "ImponibileImporto": "3176.34",
+              "Imposta": "-7261.16",
+              "EsigibilitaIVA": "I"
+            },
+            {
+              "AliquotaIVA": "11.41",
+              "Natura": "N3",
+              "ImponibileImporto": "-086.40",
+              "EsigibilitaIVA": "D"
+            },
+            {
+              "AliquotaIVA": "79.56",
+              "ImponibileImporto": "-7853.63",
+              "Imposta": "909475645.54",
+              "EsigibilitaIVA": "I"
+            },
+            {
+              "Natura": "N8",
+              "ImponibileImporto": "-017053939.19",
+              "Imposta": "6775.62",
+              "EsigibilitaIVA": "D"
+            },
+            {
+              "Natura": "N5",
+              "ImponibileImporto": "-951439692.05",
+              "Imposta": "-62544898343.03",
+              "EsigibilitaIVA": "D"
+            }
+          ]
+        }
+      },
+      {
+        "DatiGenerali": {
+          "DatiGeneraliDocumento": {
+            "TipoDocumento": "TD15",
+            "Divisa": "VHO",
+            "Data": "0808-54-41",
+            "Numero": "dolor"
+          }
+        },
+        "DatiBeniServizi": {
+          "DettaglioLinee": [
+            {
+              "NumeroLinea": 3337,
+              "PrezzoUnitario": "73624120618.06",
+              "PrezzoTotale": "-5088152.98",
+              "AliquotaIVA": "15.52"
+            },
+            {
+              "NumeroLinea": 3814,
+              "PrezzoUnitario": "4.319865",
+              "PrezzoTotale": "-95448194.4267",
+              "AliquotaIVA": "045.92"
+            },
+            {
+              "NumeroLinea": 9553,
+              "Quantita": "7.4540038",
+              "PrezzoTotale": "-65.573119",
+              "AliquotaIVA": "1.76"
+            },
+            {
+              "Quantita": "3088.85",
+              "PrezzoUnitario": "-179903.16",
+              "PrezzoTotale": "393531950.678",
+              "AliquotaIVA": "0.08"
+            }
+          ],
+          "DatiRiepilogo": [
+            {
+              "AliquotaIVA": "454.72",
+              "Natura": "N5",
+              "ImponibileImporto": "-398.64",
+              "EsigibilitaIVA": "S"
+            },
+            {
+              "AliquotaIVA": "986.75",
+              "ImponibileImporto": "-64002264829.92",
+              "Imposta": "-5759891579.08",
+              "EsigibilitaIVA": "D"
+            },
+            {
+              "Natura": "N7",
+              "ImponibileImporto": "136.87",
+              "Imposta": "-11797820477.42",
+              "EsigibilitaIVA": "D"
+            },
+            {
+              "AliquotaIVA": "21.26",
+              "Natura": "N6",
+              "ImponibileImporto": "-3136898679.28",
+              "EsigibilitaIVA": "D"
+            },
+            {
+              "Natura": "N4",
+              "ImponibileImporto": "-9286.51",
+              "Imposta": "-65.53",
+              "EsigibilitaIVA": "I"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,149 @@
+{
+  "FatturaElettronica": {
+    "versione": "FPR12",
+    "FatturaElettronicaHeader": {
+      "DatiTrasmissione": {
+        "IdTrasmittente": {
+          "IdPaese": "XL",
+          "IdCodice": "anim enim culp"
+        },
+        "ProgressivoInvio": "aliqu",
+        "FormatoTrasmissione": "FPA12",
+        "CodiceDestinatario": "aliqua "
+      },
+      "CedentePrestatore": {
+        "DatiAnagrafici": {
+          "IdFiscaleIVA": {
+            "IdPaese": "YO",
+            "IdCodice": "offi"
+          },
+          "Anagrafica": {
+            "Denominazione": "ut Ut dolor",
+            "Cognome": "Excepteur ipsum sit laboris laborum"
+          },
+          "RegimeFiscale": "RF13"
+        },
+        "Sede": {
+          "Indirizzo": "enim sed non fugiat",
+          "CAP": "34960",
+          "Comune": "ea incididunt qui enim",
+          "Nazione": "PR"
+        }
+      },
+      "CessionarioCommittente": {
+        "DatiAnagrafici": {
+          "Anagrafica": {
+            "Denominazione": "veniam Lorem dolore do comm",
+            "Nome": "nostrud dolor magna et"
+          }
+        },
+        "Sede": {
+          "Indirizzo": "cupidatat velit ",
+          "CAP": "28924",
+          "Comune": "fugiat dolor",
+          "Nazione": "UL"
+        }
+      }
+    },
+    "FatturaElettronicaBody": [
+      {
+        "DatiGenerali": {
+          "DatiGeneraliDocumento": {
+            "TipoDocumento": "TD88",
+            "Divisa": "NJE",
+            "Data": "2148-41-34",
+            "Numero": "e"
+          }
+        },
+        "DatiBeniServizi": {
+          "DettaglioLinee": [
+            {
+              "NumeroLinea": 3561,
+              "Descrizione": "ut pariatur",
+              "PrezzoUnitario": "-91.8944",
+              "AliquotaIVA": "919.30"
+            },
+            {
+              "NumeroLinea": 8496,
+              "Quantita": "7.41989353",
+              "PrezzoTotale": "446476967.2163",
+              "AliquotaIVA": "14.30"
+            }
+          ],
+          "DatiRiepilogo": [
+            {
+              "Natura": "N8",
+              "ImponibileImporto": "1158.60",
+              "Imposta": "85642038941.33",
+              "EsigibilitaIVA": "D"
+            },
+            {
+              "AliquotaIVA": "68.91",
+              "ImponibileImporto": "0.39",
+              "Imposta": "-457.74",
+              "EsigibilitaIVA": "S"
+            },
+            {
+              "Natura": "N7",
+              "ImponibileImporto": "644.37",
+              "Imposta": "934847468.93",
+              "EsigibilitaIVA": "D"
+            }
+          ]
+        }
+      },
+      {
+        "DatiGenerali": {
+          "DatiGeneraliDocumento": {
+            "TipoDocumento": "TD30",
+            "Divisa": "JMY",
+            "Data": "1743-95-75",
+            "Numero": "sit deserunt"
+          }
+        },
+        "DatiBeniServizi": {
+          "DettaglioLinee": [
+            {
+              "NumeroLinea": 3244,
+              "Descrizione": "occaecat",
+              "Quantita": "4618959.19956973",
+              "PrezzoUnitario": "9454312183.193629"
+            },
+            {
+              "NumeroLinea": 7139,
+              "Descrizione": "sed cupidatat sint",
+              "PrezzoTotale": "85.594268",
+              "AliquotaIVA": "5.96"
+            },
+            {
+              "NumeroLinea": 2440,
+              "Descrizione": "dolore magna",
+              "Quantita": "63.590885",
+              "AliquotaIVA": "522.26"
+            }
+          ],
+          "DatiRiepilogo": [
+            {
+              "AliquotaIVA": "2.55",
+              "Natura": "N5",
+              "ImponibileImporto": "-48284023105.17",
+              "EsigibilitaIVA": "I"
+            },
+            {
+              "AliquotaIVA": "2.03",
+              "Natura": "N5",
+              "Imposta": "-42963779557.43",
+              "EsigibilitaIVA": "S"
+            },
+            {
+              "AliquotaIVA": "87.34",
+              "Natura": "N0",
+              "Imposta": "-9881154869.73",
+              "EsigibilitaIVA": "S"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

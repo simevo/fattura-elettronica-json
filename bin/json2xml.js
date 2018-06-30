@@ -1,4 +1,11 @@
 #!/usr/bin/nodejs
+//
+// converts the supplied JSON file to XML
+//
+// Copyright (c) 2018, Paolo Greppi <paolo.greppi@simevo.com>
+// License: BSD 3-Clause
+
+"use strict";
 
 var parser = require('xml2json');
 var fs = require('fs');

@@ -1,24 +1,27 @@
 #!/usr/bin/nodejs
+//
+// validates the supplied JSON invoice file against the JSON invoice schema
+//
+// Copyright (c) 2018, Paolo Greppi <paolo.greppi@simevo.com>
+// License: BSD 3-Clause
 
-var path = require('path');
+"use strict";
+
 var fs = require('fs');
 var validate = require('json-schema/lib/validate').validate;
 
-var schema = loadJson('www/fatturaPA_1.2_schema_semplificato.json');
-files = [
-  'samples/IT01234567890_FPA01.json',
-  'samples/IT01234567890_FPA02.json',
-  'samples/IT01234567890_FPA03.json',
-  'samples/IT01234567890_FPR01.json',
-  'samples/IT01234567890_FPR02.json',
-  'samples/IT01234567890_FPR03.json'
-];
-files.forEach(function(file) {
-  console.log('validating:', file);
-  var doc = loadJson(file);
-  var result = validate(doc, schema);
-  console.log(result);
-});
+if (process.argv.length <= 2) {
+    console.log("Usage: json2xml file.json");
+    process.exit(-1);
+}
+
+var filename = process.argv[2];
+
+var schema = loadJson('www/fatturaPA_1.2_schema.json');
+console.log('validating:', filename);
+var doc = loadJson(filename);
+var result = validate(doc, schema);
+console.log(result);
 
 function loadJson(path) {
   var data = fs.readFileSync(path, 'utf-8');

@@ -60,11 +60,13 @@
               "SEGUE DESCRIZIONE CAUSALE NEL CASO IN CUI NON SIANO STATI SUFFICIENTI 200 CARATTERI AAAAAAAAAAA BBBBBBBBBBBBBBBBB"
             ]
           },
-          "DatiOrdineAcquisto": {
-            "RiferimentoNumeroLinea": "1",
-            "IdDocumento": "66685",
-            "NumItem": "1"
-          },
+          "DatiOrdineAcquisto": [
+            {
+              "RiferimentoNumeroLinea": [1],
+              "IdDocumento": "66685",
+              "NumItem": "1"
+            }
+          ],
           "DatiTrasporto": {
             "DatiAnagraficiVettore": {
               "IdFiscaleIVA": {
@@ -81,7 +83,7 @@
         "DatiBeniServizi": {
           "DettaglioLinee": [
             {
-              "NumeroLinea": "1",
+              "NumeroLinea": 1,
               "Descrizione": "LA DESCRIZIONE DELLA FORNITURA PUO' SUPERARE I CENTO CARATTERI CHE RAPPRESENTAVANO IL PRECEDENTE LIMITE DIMENSIONALE. TALE LIMITE NELLA NUOVA VERSIONE E' STATO PORTATO A MILLE CARATTERI",
               "Quantita": "5.00",
               "PrezzoUnitario": "1.00",
@@ -89,7 +91,7 @@
               "AliquotaIVA": "22.00"
             },
             {
-              "NumeroLinea": "2",
+              "NumeroLinea": 2,
               "Descrizione": "FORNITURE VARIE PER UFFICIO",
               "Quantita": "10.00",
               "PrezzoUnitario": "2.00",
@@ -97,21 +99,25 @@
               "AliquotaIVA": "22.00"
             }
           ],
-          "DatiRiepilogo": {
-            "AliquotaIVA": "22.00",
-            "ImponibileImporto": "27.00",
-            "Imposta": "5.95",
-            "EsigibilitaIVA": "I"
-          }
+          "DatiRiepilogo": [
+            {
+              "AliquotaIVA": "22.00",
+              "ImponibileImporto": "27.00",
+              "Imposta": "5.95",
+              "EsigibilitaIVA": "I"
+            }
+          ]
         },
-        "DatiPagamento": {
+        "DatiPagamento": [
+          {
           "CondizioniPagamento": "TP01",
-          "DettaglioPagamento": {
-            "ModalitaPagamento": "MP01",
-            "DataScadenzaPagamento": "2015-01-30",
-            "ImportoPagamento": "32.95"
+            "DettaglioPagamento": {
+              "ModalitaPagamento": "MP01",
+              "DataScadenzaPagamento": "2015-01-30",
+              "ImportoPagamento": "32.95"
+            }
           }
-        }
+        ]
       },
       {
         "DatiGenerali": {
@@ -125,37 +131,43 @@
               "SEGUE DESCRIZIONE CAUSALE NEL CASO IN CUI NON SIANO STATI SUFFICIENTI 200 CARATTERI AAAAAAAAAAA BBBBBBBBBBBBBBBBB"
             ]
           },
-          "DatiOrdineAcquisto": {
-            "RiferimentoNumeroLinea": "1",
-            "IdDocumento": "66685",
-            "NumItem": "1"
-          }
+          "DatiOrdineAcquisto": [
+            {
+              "RiferimentoNumeroLinea": [1],
+              "IdDocumento": "66685",
+              "NumItem": "1"
+            }
+          ]
         },
         "DatiBeniServizi": {
           "DettaglioLinee": [
             {
-              "NumeroLinea": "1",
+              "NumeroLinea": 1,
               "Descrizione": "PRESTAZIONE DEL SEGUENTE SERVIZIO PROFESSIONALE: LA DESCRIZIONE DELLA PRESTAZIONE PUO' SUPERARE I CENTO CARATTERI CHE RAPPRESENTAVANO IL PRECEDENTE LIMITE DIMENSIONALE. TALE LIMITE NELLA NUOVA VERSIONE E' STATO PORTATO A MILLE CARATTERI",
               "PrezzoUnitario": "2000.00",
               "PrezzoTotale": "2000.00",
               "AliquotaIVA": "22.00"
             }
           ],
-          "DatiRiepilogo": {
-            "AliquotaIVA": "22.00",
-            "ImponibileImporto": "2000.00",
-            "Imposta": "440.00",
-            "EsigibilitaIVA": "I"
-          }
+          "DatiRiepilogo": [
+            {
+              "AliquotaIVA": "22.00",
+              "ImponibileImporto": "2000.00",
+              "Imposta": "440.00",
+              "EsigibilitaIVA": "I"
+            }
+          ]
         },
-        "DatiPagamento": {
-          "CondizioniPagamento": "TP01",
-          "DettaglioPagamento": {
-            "ModalitaPagamento": "MP19",
-            "DataScadenzaPagamento": "2015-01-28",
-            "ImportoPagamento": "2440.00"
+        "DatiPagamento": [
+          {
+            "CondizioniPagamento": "TP01",
+            "DettaglioPagamento": {
+              "ModalitaPagamento": "MP19",
+              "DataScadenzaPagamento": "2015-01-28",
+              "ImportoPagamento": "2440.00"
+            }
           }
-        }
+        ]
       }
     ]
   }

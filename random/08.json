@@ -1,0 +1,125 @@
+{
+  "FatturaElettronica": {
+    "versione": "FPR12",
+    "FatturaElettronicaHeader": {
+      "DatiTrasmissione": {
+        "IdTrasmittente": {
+          "IdPaese": "IO",
+          "IdCodice": "eu esse exercitation"
+        },
+        "ProgressivoInvio": "offici",
+        "FormatoTrasmissione": "FPA12",
+        "CodiceDestinatario": "id ull"
+      },
+      "CedentePrestatore": {
+        "DatiAnagrafici": {
+          "IdFiscaleIVA": {
+            "IdPaese": "ZB",
+            "IdCodice": "cons"
+          },
+          "Anagrafica": {
+            "Denominazione": "id fugiat",
+            "Cognome": "reprehenderit et enim"
+          },
+          "RegimeFiscale": "RF10"
+        },
+        "Sede": {
+          "Indirizzo": "eiusm",
+          "CAP": "31889",
+          "Comune": "in est",
+          "Nazione": "JU"
+        }
+      },
+      "CessionarioCommittente": {
+        "DatiAnagrafici": {
+          "Anagrafica": {
+            "Denominazione": "eu labore adipisicing ex",
+            "Cognome": "consectetur ea eius"
+          }
+        },
+        "Sede": {
+          "Indirizzo": "in non Lorem veniam",
+          "CAP": "90982",
+          "Comune": "enim sed consectetur Duis",
+          "Nazione": "SC"
+        }
+      }
+    },
+    "FatturaElettronicaBody": [
+      {
+        "DatiGenerali": {
+          "DatiGeneraliDocumento": {
+            "TipoDocumento": "TD75",
+            "Divisa": "LCE",
+            "Data": "1581-16-43",
+            "Numero": "fugi"
+          }
+        },
+        "DatiBeniServizi": {
+          "DettaglioLinee": [
+            {
+              "NumeroLinea": 9260,
+              "Descrizione": "ex",
+              "Quantita": "39.74",
+              "AliquotaIVA": "26.51"
+            }
+          ],
+          "DatiRiepilogo": [
+            {
+              "AliquotaIVA": "012.10",
+              "Natura": "N6",
+              "ImponibileImporto": "362.31",
+              "Imposta": "2589379966.31"
+            }
+          ]
+        }
+      },
+      {
+        "DatiGenerali": {
+          "DatiGeneraliDocumento": {
+            "TipoDocumento": "TD27",
+            "Divisa": "KKB",
+            "Data": "5856-04-11",
+            "Numero": "co"
+          }
+        },
+        "DatiBeniServizi": {
+          "DettaglioLinee": [
+            {
+              "NumeroLinea": 1288,
+              "Descrizione": "magna eiusmod minim",
+              "PrezzoUnitario": "-62057982.2929572",
+              "AliquotaIVA": "45.94"
+            },
+            {
+              "NumeroLinea": 7735,
+              "Descrizione": "proident consequat laboris minim eu",
+              "PrezzoUnitario": "-47034.3141212",
+              "PrezzoTotale": "-8023.0887"
+            }
+          ],
+          "DatiRiepilogo": [
+            {
+              "AliquotaIVA": "79.96",
+              "Natura": "N4",
+              "ImponibileImporto": "-5263002.69",
+              "EsigibilitaIVA": "S"
+            },
+            {
+              "AliquotaIVA": "9.53",
+              "Natura": "N1",
+              "Imposta": "29150.12",
+              "EsigibilitaIVA": "I"
+            },
+            {
+              "AliquotaIVA": "200.98",
+              "Natura": "N9",
+              "ImponibileImporto": "-4896720.15",
+              "EsigibilitaIVA": "S"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

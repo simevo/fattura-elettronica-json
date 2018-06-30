@@ -1,0 +1,173 @@
+{
+  "FatturaElettronica": {
+    "versione": "FPR12",
+    "FatturaElettronicaHeader": {
+      "DatiTrasmissione": {
+        "IdTrasmittente": {
+          "IdPaese": "MM",
+          "IdCodice": "aliqua"
+        },
+        "ProgressivoInvio": "Excepte",
+        "FormatoTrasmissione": "FPA12",
+        "CodiceDestinatario": "amet ir"
+      },
+      "CedentePrestatore": {
+        "DatiAnagrafici": {
+          "IdFiscaleIVA": {
+            "IdPaese": "LZ",
+            "IdCodice": "dolore d"
+          },
+          "Anagrafica": {
+            "Denominazione": "et cupidatat",
+            "Cognome": "nisi"
+          },
+          "RegimeFiscale": "RF17"
+        },
+        "Sede": {
+          "Indirizzo": "in nostrud mollit est a",
+          "CAP": "59221",
+          "Comune": "labore proident fugiat",
+          "Nazione": "JY"
+        }
+      },
+      "CessionarioCommittente": {
+        "DatiAnagrafici": {
+          "Anagrafica": {
+            "Denominazione": "nulla laborum anim",
+            "Cognome": "velit"
+          }
+        },
+        "Sede": {
+          "Indirizzo": "anim ullamco",
+          "CAP": "17273",
+          "Comune": "cupidatat",
+          "Nazione": "CE"
+        }
+      }
+    },
+    "FatturaElettronicaBody": [
+      {
+        "DatiGenerali": {
+          "DatiGeneraliDocumento": {
+            "TipoDocumento": "TD99",
+            "Divisa": "GTL",
+            "Data": "1948-02-43",
+            "Numero": "ea occaecat"
+          }
+        },
+        "DatiBeniServizi": {
+          "DettaglioLinee": [
+            {
+              "NumeroLinea": 7835,
+              "PrezzoUnitario": "-802017.4611921",
+              "PrezzoTotale": "-91554.07795994",
+              "AliquotaIVA": "342.96"
+            },
+            {
+              "Descrizione": "eiusmod ",
+              "PrezzoUnitario": "313135607.41",
+              "PrezzoTotale": "52878025.1544",
+              "AliquotaIVA": "4.60"
+            },
+            {
+              "NumeroLinea": 3977,
+              "Quantita": "8656.49289",
+              "PrezzoUnitario": "-99.627",
+              "PrezzoTotale": "4.42"
+            }
+          ],
+          "DatiRiepilogo": [
+            {
+              "AliquotaIVA": "2.17",
+              "ImponibileImporto": "-45702394811.04",
+              "Imposta": "-820007.71",
+              "EsigibilitaIVA": "D"
+            },
+            {
+              "AliquotaIVA": "06.00",
+              "Natura": "N3",
+              "ImponibileImporto": "450125700.45",
+              "Imposta": "-1760616.57"
+            },
+            {
+              "Natura": "N6",
+              "ImponibileImporto": "-79.87",
+              "Imposta": "-515746.29",
+              "EsigibilitaIVA": "S"
+            },
+            {
+              "AliquotaIVA": "3.08",
+              "Natura": "N1",
+              "ImponibileImporto": "00647065177.90",
+              "EsigibilitaIVA": "I"
+            }
+          ]
+        }
+      },
+      {
+        "DatiGenerali": {
+          "DatiGeneraliDocumento": {
+            "TipoDocumento": "TD27",
+            "Divisa": "ZJS",
+            "Data": "8986-28-53",
+            "Numero": "veni"
+          }
+        },
+        "DatiBeniServizi": {
+          "DettaglioLinee": [
+            {
+              "Descrizione": "aliquip",
+              "Quantita": "07.50667959",
+              "PrezzoUnitario": "-9531.1947798",
+              "PrezzoTotale": "06436375.1904356"
+            },
+            {
+              "Descrizione": "incididunt ex eu magna laboris",
+              "Quantita": "07189829.18441273",
+              "PrezzoUnitario": "2155248.02040551",
+              "PrezzoTotale": "299223.53"
+            },
+            {
+              "Quantita": "17.8752",
+              "PrezzoUnitario": "-720732873.20",
+              "PrezzoTotale": "-1622.4777485",
+              "AliquotaIVA": "08.73"
+            },
+            {
+              "NumeroLinea": 9199,
+              "Descrizione": "exercitation tempor",
+              "PrezzoUnitario": "84368.56890609",
+              "AliquotaIVA": "204.64"
+            },
+            {
+              "NumeroLinea": 2148,
+              "Quantita": "087150.332",
+              "PrezzoUnitario": "-84.67969072",
+              "AliquotaIVA": "86.80"
+            }
+          ],
+          "DatiRiepilogo": [
+            {
+              "AliquotaIVA": "066.21",
+              "ImponibileImporto": "-043366.47",
+              "Imposta": "2.53",
+              "EsigibilitaIVA": "S"
+            },
+            {
+              "AliquotaIVA": "26.85",
+              "ImponibileImporto": "-48.64",
+              "Imposta": "6346299.13",
+              "EsigibilitaIVA": "S"
+            },
+            {
+              "Natura": "N2",
+              "ImponibileImporto": "-971393503.58",
+              "Imposta": "43650204076.99",
+              "EsigibilitaIVA": "S"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}
