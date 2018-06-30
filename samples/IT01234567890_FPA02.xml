@@ -125,7 +125,7 @@
       <CondizioniPagamento>TP01</CondizioniPagamento>
       <DettaglioPagamento>
         <ModalitaPagamento>MP01</ModalitaPagamento>
-        <DataScadenzaPagamento>2017-02-30</DataScadenzaPagamento>
+        <DataScadenzaPagamento>2017-02-28</DataScadenzaPagamento>
         <ImportoPagamento>30.50</ImportoPagamento>
       </DettaglioPagamento>
     </DatiPagamento>
