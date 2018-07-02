@@ -62,14 +62,18 @@
           },
           "DatiOrdineAcquisto": [
             {
-              "RiferimentoNumeroLinea": [1],
+              "RiferimentoNumeroLinea": [
+                "1"
+              ],
               "IdDocumento": "66685",
               "NumItem": "1"
             }
           ],
           "DatiContratto": [
             {
-              "RiferimentoNumeroLinea": [1],
+              "RiferimentoNumeroLinea": [
+                "1"
+              ],
               "IdDocumento": "123",
               "Data": "2012-09-01",
               "NumItem": "5",
@@ -93,7 +97,7 @@
         "DatiBeniServizi": {
           "DettaglioLinee": [
             {
-              "NumeroLinea": 1,
+              "NumeroLinea": "1",
               "Descrizione": "DESCRIZIONE DELLA FORNITURA",
               "Quantita": "5.00",
               "PrezzoUnitario": "1.00",

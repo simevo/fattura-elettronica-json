@@ -61,7 +61,9 @@
           },
           "DatiOrdineAcquisto": [
             {
-              "RiferimentoNumeroLinea": [1],
+              "RiferimentoNumeroLinea": [
+                "1"
+              ],
               "IdDocumento": "66685",
               "NumItem": "1",
               "CodiceCUP": "123abc",
@@ -70,7 +72,9 @@
           ],
           "DatiContratto": [
             {
-              "RiferimentoNumeroLinea": [1],
+              "RiferimentoNumeroLinea": [
+                "1"
+              ],
               "IdDocumento": "123",
               "Data": "2016-09-01",
               "NumItem": "5",
@@ -80,7 +84,9 @@
           ],
           "DatiConvenzione": [
             {
-              "RiferimentoNumeroLinea": [1],
+              "RiferimentoNumeroLinea": [
+                "1"
+              ],
               "IdDocumento": "456",
               "NumItem": "5",
               "CodiceCUP": "123abc",
@@ -89,7 +95,9 @@
           ],
           "DatiRicezione": [
             {
-              "RiferimentoNumeroLinea": [1],
+              "RiferimentoNumeroLinea": [
+                "1"
+              ],
               "IdDocumento": "789",
               "NumItem": "5",
               "CodiceCUP": "123abc",
@@ -112,7 +120,7 @@
         "DatiBeniServizi": {
           "DettaglioLinee": [
             {
-              "NumeroLinea": 1,
+              "NumeroLinea": "1",
               "Descrizione": "DESCRIZIONE DELLA FORNITURA",
               "Quantita": "5.00",
               "PrezzoUnitario": "1.00",

@@ -11,7 +11,7 @@ La documentazione tecnica di riferimento del **formato XML** delle fatture elett
 Poiché per lo sviluppo di API ed SDK è più comodo manipolare i dati in formato **JSON**, questo proof-of-concept mira a valutare la fattibilità di:
 - **convertire** XML <-> JSON
 - **validare** JSON
-- **generare** di file fattura JSON e XML **randomizzati** a scopo di test e fuzzy-test
+- **generare** file fattura JSON e XML **randomizzati** a scopo di test e fuzzy-test
 - **rapid prototyping** di visualizzatori ed editor
 - persistenza in **database** SQL e No-SQL.
 

@@ -21,6 +21,31 @@ fs.readFile(filename, 'utf8', function (err, xml) {
   if (err) {
     return console.log(err);
   }
-  var json = parser.toJson(xml, {object: true});
+  var options = {
+    object: true,
+    arrayNotation: [
+      "FatturaElettronicaBody",
+      "Causale",
+      "DatiOrdineAcquisto",
+      "RiferimentoNumeroLinea",
+      "DatiContratto",
+      "DatiConvenzione",
+      "DatiRicezione",
+      "DettaglioLinee",
+      "DatiRiepilogo",
+      "DatiPagamento"
+    ]
+  };
+  var json = parser.toJson(xml, options);
+  for (var key in json) {
+    json.FatturaElettronica = json[key];
+    for (var subkey in json[key]) {
+      if (subkey.indexOf(':') != -1) {
+        delete json[key][subkey];
+      }
+    }
+    delete json[key];
+    break;
+  }
   console.log("%s", JSON.stringify(json, null, 2));
 });
