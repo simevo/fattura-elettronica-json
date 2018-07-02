@@ -70,12 +70,6 @@ ottenendo però uno schema non utilizzabile.
 
 Successivamente i files XML di esempio sono stati convertiti a JSON per mezzo della libreria [node-xml2json](https://github.com/buglabs/node-xml2json) (script [`bin/convert_samples.sh`](bin/convert_samples.sh)).
 
-Questa conversione automatica funziona più o meno, ma c'è un intoppo per quegli elementi che possono ripetersi (ad esempio `FatturaElettronica.FatturaElettronicaBody` e `FatturaElettronica.FatturaElettronicaBody[1].DatiBeniServizi.DettaglioLinee`), nel caso ve ne sia uno solo la conversione genera un JSON dove invece di un `array` c'è un `object` vedi:
-- https://social.msdn.microsoft.com/Forums/windowsapps/en-US/03fe9c57-b7a8-41aa-ade4-652b6b5eafc3/single-element-xml-to-json-array
-- http://jersey.576304.n2.nabble.com/Single-Element-Arrays-and-JSON-td5532105.html
-
-Per questi casi occorre wrappare manualmente l'`object` con `[]`, vedi punto 1 del [paragrafo **TODO**](#todo).
-
 Si è quindi generato uno schema a partire dai files fattura JSON di esempio, per mezzo del servizio on-line [jsonschema.net](https://www.jsonschema.net/), che dopo semplificazione (`grep -v '$id'`) e aggiustamento manuale aggiunta di campi `title` e `description` desunti dalle SPECIFICHE TECNICHE OPERATIVE DEL FORMATO DELLA FATTURA DEL SISTEMA DI INTERSCAMBIO ha dato origine allo schema [`fatturaPA_1.2_schema.json`](fatturaPA_1.2_schema.json).
 
 Tutti i files di esempio JSON sono validati dallo schema (script [`bin/validate_samples_json.sh`](bin/validate_samples_json.sh)).
@@ -89,24 +83,6 @@ In questo proof-of-concept si è scelto di generare dei files JSON random parten
 
 Il template handlebars è stato validato riconvertendo ad XML i files di esempio (script [`bin/reconvert_samples.sh`](bin/reconvert_samples.sh)).
 
-Al momento tuttavia i files XML così ottenuti non passano la validazione con lo schema XML, con degli errori del tipo:
-```
-random/00.xml:21: element Nome: Schemas validity error : Element 'Nome': This element is not expected. Expected is one of ( Titolo, CodEORI ).
-random/00.xml:23: element RegimeFiscale: Schemas validity error : Element 'RegimeFiscale': [facet 'enumeration'] The value 'RF33' is not an element of the set {'RF01', 'RF02', 'RF03', 'RF04', 'RF05', 'RF06', 'RF07', 'RF08', 'RF09', 'RF10', 'RF11', 'RF12', 'RF13', 'RF14', 'RF15', 'RF16', 'RF17', 'RF19', 'RF18'}.
-random/00.xml:23: element RegimeFiscale: Schemas validity error : Element 'RegimeFiscale': 'RF33' is not a valid value of the atomic type '{http://ivaservizi.agenziaentrate.gov.it/docs/xsd/fatture/v1.2}RegimeFiscaleType'.
-random/00.xml:50: element TipoDocumento: Schemas validity error : Element 'TipoDocumento': [facet 'enumeration'] The value 'TD24' is not an element of the set {'TD01', 'TD02', 'TD03', 'TD04', 'TD05', 'TD06'}.
-random/00.xml:50: element TipoDocumento: Schemas validity error : Element 'TipoDocumento': 'TD24' is not a valid value of the atomic type '{http://ivaservizi.agenziaentrate.gov.it/docs/xsd/fatture/v1.2}TipoDocumentoType'.
-random/00.xml:52: element Data: Schemas validity error : Element 'Data': '6591-35-44' is not a valid value of the atomic type '{http://ivaservizi.agenziaentrate.gov.it/docs/xsd/fatture/v1.2}DataFatturaType'.
-random/00.xml:107: element TipoDocumento: Schemas validity error : Element 'TipoDocumento': [facet 'enumeration'] The value 'TD74' is not an element of the set {'TD01', 'TD02', 'TD03', 'TD04', 'TD05', 'TD06'}.
-random/00.xml:107: element TipoDocumento: Schemas validity error : Element 'TipoDocumento': 'TD74' is not a valid value of the atomic type '{http://ivaservizi.agenziaentrate.gov.it/docs/xsd/fatture/v1.2}TipoDocumentoType'.
-random/00.xml:109: element Data: Schemas validity error : Element 'Data': '5281-04-38' is not a valid value of the atomic type '{http://ivaservizi.agenziaentrate.gov.it/docs/xsd/fatture/v1.2}DataFatturaType'.
-random/00.xml:160: element TipoDocumento: Schemas validity error : Element 'TipoDocumento': [facet 'enumeration'] The value 'TD85' is not an element of the set {'TD01', 'TD02', 'TD03', 'TD04', 'TD05', 'TD06'}.
-random/00.xml:160: element TipoDocumento: Schemas validity error : Element 'TipoDocumento': 'TD85' is not a valid value of the atomic type '{http://ivaservizi.agenziaentrate.gov.it/docs/xsd/fatture/v1.2}TipoDocumentoType'.
-random/00.xml:162: element Data: Schemas validity error : Element 'Data': '8927-46-70' is not a valid value of the atomic type '{http://ivaservizi.agenziaentrate.gov.it/docs/xsd/fatture/v1.2}DataFatturaType'.
-random/00.xml fails to validate
-```
-causati dalla eccessiva randomizzazione, vedi punto 2 del [paragrafo **TODO**](#todo).
-
 ## Demo
 
 Con lo schema così ottenuto e [JSON Editor](https://github.com/json-editor/json-editor) è possibile generare automaticamente un editor basico.
@@ -117,24 +93,6 @@ make
 python -m SimpleHTTPServer
 ```
 quindi visitare http://localhost:8000/www/index.html
-
-## TODO
-
-0. Completare lo schema JSON
-
-1. implementare la conversione automatica da fattura formato XML a formato JSON; dovrebbe essere possibile configurando xml2json con l'[opzione `arrayNotation`](https://github.com/buglabs/node-xml2json#options-object-for-tojson)
-
-2. configurare `json-schema-faker` [annotando lo schema](https://github.com/json-schema-faker/json-schema-faker#faking-values) in modo che i files JSON dopo conversione a XML passino la validazione
-
-3. aggiungere funzioni al demo usando [le estensioni allo schema JSON specifiche di JSON Editor](https://github.com/json-editor/json-editor#json-schema-support) e implementando le funzioni avanzate e lo styling come negli esempi [Advanced Usage](http://rawgithub.com/jdorn/json-editor/master/examples/advanced.html) e [CSS Integration](http://rawgithub.com/jdorn/json-editor/master/examples/css_integration.html)
-
-4. testare editor basato su specifici front-end frameworks:
-
-    - vue.js, esempio: https://gitlab.com/formschema/native
-
-    - react, esempio: https://github.com/mozilla-services/react-jsonschema-form
-
-    - angular, esempio: https://github.com/json-schema-form/angular-schema-form
 
 ## Legalese
 
