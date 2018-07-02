@@ -10,9 +10,15 @@
     </style>
   </head>
   <body>
-    <h1>Editor semplice per fattura elettronica</h1>
+    <h1>Editor per fattura elettronica basato sullo schema JSON</h1>
+    <p>
+      Codice sorgente: <a href="https://github.com/simevo/fattura-elettronica-json">https://github.com/simevo/fattura-elettronica-json</a>
+    </p>
+    <button id='json'>Carica una fattura in formato JSON</button>
     <button id='genera'>Genera e visualizza la fattura in formato XML</button>
+    <button id='resetta'>Resetta il form</button>
     <pre id="xml"></pre>
+    <hr/>
     <div id='editor_holder'></div>
     <script type="text/javascript">
       // configuration for jshint
@@ -27,22 +33,8 @@
         schema: {
           $ref: "fatturaPA_1.2_schema.json"
         },
-      }).on('ready', function() {
-        // Initialize the value
-        var request = new XMLHttpRequest();
-        request.open("GET", "IT01234567890_FPA01.json");
-        request.onload = function() {
-          if (request.status == 200) {
-            if (request.responseText) {
-              var dataFrom = JSON.parse(request.responseText);
-              editor.setValue(dataFrom);
-            }
-          }
-        };
-        request.send();
       });
       document.getElementById("genera").onclick = function() {
-        // Initialize the value
         var request = new XMLHttpRequest();
         request.open("GET", "fatturaPA_1.2.hbs");
         request.onload = function() {
@@ -57,6 +49,23 @@
           }
         };
         request.send();
+      };
+      document.getElementById("json").onclick = function() {
+        var request = new XMLHttpRequest();
+        request.open("GET", "IT01234567890_FPA01.json");
+        request.onload = function() {
+          if (request.status == 200) {
+            if (request.responseText) {
+              var json = JSON.parse(request.responseText);
+              editor.setValue(json);
+            }
+          }
+        };
+        request.send();
+      };
+      document.getElementById("resetta").onclick = function() {
+        var context = editor.setValue({});
+        document.getElementById("xml").innerText = '';
       };
     </script>
   </body>
