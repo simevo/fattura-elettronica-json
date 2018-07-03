@@ -8,7 +8,7 @@
 require_once './vendor/autoload.php';
 
 if (count($argv) <= 1) {
-    echo "Usage: validate.php file.json\n";
+    echo "Usage: validate_json.php file.json\n";
     exit(-1);
 }
 

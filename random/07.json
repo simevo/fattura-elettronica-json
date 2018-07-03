@@ -1,47 +1,47 @@
 {
   "FatturaElettronica": {
-    "versione": "FPR12",
+    "versione": "FPA12",
     "FatturaElettronicaHeader": {
       "DatiTrasmissione": {
         "IdTrasmittente": {
-          "IdPaese": "NC",
-          "IdCodice": "est et v"
+          "IdPaese": "QG",
+          "IdCodice": "consecte"
         },
-        "ProgressivoInvio": "velit ips",
+        "ProgressivoInvio": "amet nu",
         "FormatoTrasmissione": "FPA12",
-        "CodiceDestinatario": "labore"
+        "CodiceDestinatario": "VUJ441"
       },
       "CedentePrestatore": {
         "DatiAnagrafici": {
           "IdFiscaleIVA": {
-            "IdPaese": "VB",
-            "IdCodice": "esse"
+            "IdPaese": "CE",
+            "IdCodice": "veniam reprehenderi"
           },
           "Anagrafica": {
-            "Denominazione": "in culpa ipsum",
-            "Nome": "aute laborum reprehenderit ea"
+            "Denominazione": "occaecat est",
+            "Nome": "qui amet cupidatat"
           },
-          "RegimeFiscale": "RF27"
+          "RegimeFiscale": "RF02"
         },
         "Sede": {
-          "Indirizzo": "Excepteur ad se",
-          "CAP": "91733",
-          "Comune": "nostrud ad",
-          "Nazione": "DB"
+          "Indirizzo": "ex Ut veniam elit",
+          "CAP": "79496",
+          "Comune": "labore consequat sint esse",
+          "Nazione": "IG"
         }
       },
       "CessionarioCommittente": {
         "DatiAnagrafici": {
           "Anagrafica": {
-            "Nome": "culpa minim pariatur",
-            "Cognome": "officia sunt ut magn"
+            "Nome": "dolor et velit",
+            "Cognome": "eiusmod"
           }
         },
         "Sede": {
-          "Indirizzo": "anim incididunt",
-          "CAP": "53584",
-          "Comune": "ipsum ullamco",
-          "Nazione": "XQ"
+          "Indirizzo": "in veniam anim labore qui",
+          "CAP": "32596",
+          "Comune": "consectetur commodo",
+          "Nazione": "SX"
         }
       }
     },
@@ -49,207 +49,46 @@
       {
         "DatiGenerali": {
           "DatiGeneraliDocumento": {
-            "TipoDocumento": "TD21",
-            "Divisa": "HBJ",
-            "Data": "6963-43-67",
-            "Numero": "ex laboris consecte"
+            "TipoDocumento": "TD97",
+            "Divisa": "KCG",
+            "Data": "1091-45-51",
+            "Numero": "ex ad "
           }
         },
         "DatiBeniServizi": {
           "DettaglioLinee": [
             {
-              "Descrizione": "irure in sunt exercitation",
-              "PrezzoUnitario": "07650451.858258",
-              "PrezzoTotale": "-2.6991",
-              "AliquotaIVA": "82.87"
+              "NumeroLinea": "907",
+              "Descrizione": "laboris",
+              "PrezzoUnitario": "18545347.199140",
+              "PrezzoTotale": "48739901219.55718",
+              "AliquotaIVA": "49.82"
             },
             {
-              "NumeroLinea": 4409,
-              "Descrizione": "enim occaecat",
-              "Quantita": "6544474401.6364",
-              "PrezzoTotale": "6825810.42679"
+              "NumeroLinea": "73",
+              "Descrizione": "ea aliquip consectetur ullamco",
+              "PrezzoUnitario": "966102273.09884169",
+              "PrezzoTotale": "52.6625",
+              "AliquotaIVA": "67.69"
             },
             {
-              "NumeroLinea": 8557,
-              "Descrizione": "ad",
-              "PrezzoTotale": "-694884.83555032",
-              "AliquotaIVA": "67.40"
-            },
-            {
-              "NumeroLinea": 7080,
-              "Quantita": "14.627311",
-              "PrezzoTotale": "7472537071.7966359",
-              "AliquotaIVA": "84.59"
-            },
-            {
-              "NumeroLinea": 7708,
-              "Descrizione": "esse sit qui aliquip",
-              "PrezzoUnitario": "-85279549.021747",
-              "AliquotaIVA": "83.08"
+              "NumeroLinea": "8",
+              "Descrizione": "ullamco amet in culpa",
+              "PrezzoUnitario": "-1743237795.711",
+              "PrezzoTotale": "251947.780603",
+              "AliquotaIVA": "05.92"
             }
           ],
           "DatiRiepilogo": [
             {
-              "AliquotaIVA": "3.10",
-              "Natura": "N6",
-              "ImponibileImporto": "-6.15",
-              "EsigibilitaIVA": "D"
+              "AliquotaIVA": "2.58",
+              "ImponibileImporto": "-4652399.82",
+              "Imposta": "99835.74"
             },
             {
-              "AliquotaIVA": "947.45",
-              "Natura": "N9",
-              "ImponibileImporto": "-62768160447.54",
-              "EsigibilitaIVA": "S"
-            },
-            {
-              "AliquotaIVA": "649.57",
-              "Natura": "N2",
-              "Imposta": "-36.88",
-              "EsigibilitaIVA": "I"
-            },
-            {
-              "Natura": "N0",
-              "ImponibileImporto": "11908.61",
-              "Imposta": "-549178630.55",
-              "EsigibilitaIVA": "D"
-            }
-          ]
-        }
-      },
-      {
-        "DatiGenerali": {
-          "DatiGeneraliDocumento": {
-            "TipoDocumento": "TD83",
-            "Divisa": "GPI",
-            "Data": "6118-34-78",
-            "Numero": "Du"
-          }
-        },
-        "DatiBeniServizi": {
-          "DettaglioLinee": [
-            {
-              "Descrizione": "quis labore",
-              "Quantita": "62583.58844401",
-              "PrezzoUnitario": "-28667.203",
-              "AliquotaIVA": "2.58"
-            },
-            {
-              "NumeroLinea": 35,
-              "Descrizione": "ipsum Lorem",
-              "PrezzoUnitario": "3194962.01",
-              "PrezzoTotale": "-92793084701.509"
-            }
-          ],
-          "DatiRiepilogo": [
-            {
-              "AliquotaIVA": "04.30",
-              "Natura": "N9",
-              "ImponibileImporto": "-20115762.79",
-              "Imposta": "-62196.81"
-            },
-            {
-              "AliquotaIVA": "05.51",
-              "Natura": "N6",
-              "ImponibileImporto": "51687.64",
-              "EsigibilitaIVA": "I"
-            },
-            {
-              "AliquotaIVA": "0.36",
-              "Natura": "N7",
-              "Imposta": "3358013.90",
-              "EsigibilitaIVA": "I"
-            },
-            {
-              "AliquotaIVA": "38.23",
-              "Natura": "N9",
-              "Imposta": "77.06",
-              "EsigibilitaIVA": "I"
-            }
-          ]
-        }
-      },
-      {
-        "DatiGenerali": {
-          "DatiGeneraliDocumento": {
-            "TipoDocumento": "TD40",
-            "Divisa": "LZO",
-            "Data": "5062-19-00",
-            "Numero": "commodo laboru"
-          }
-        },
-        "DatiBeniServizi": {
-          "DettaglioLinee": [
-            {
-              "NumeroLinea": 8962,
-              "Descrizione": "esse consequat ut elit",
-              "Quantita": "55505414326.483494",
-              "AliquotaIVA": "17.08"
-            },
-            {
-              "NumeroLinea": 1142,
-              "Descrizione": "ad velit nostrud ex",
-              "PrezzoUnitario": "-9222097.48",
-              "PrezzoTotale": "7.626"
-            },
-            {
-              "NumeroLinea": 7896,
-              "Descrizione": "minim ",
-              "Quantita": "7846849049.13652277",
-              "PrezzoUnitario": "-94501332102.45773654"
-            }
-          ],
-          "DatiRiepilogo": [
-            {
-              "Natura": "N8",
-              "ImponibileImporto": "8067.77",
-              "Imposta": "-85652197401.21",
-              "EsigibilitaIVA": "S"
-            },
-            {
-              "Natura": "N4",
-              "ImponibileImporto": "-9645.64",
-              "Imposta": "-9730.44",
-              "EsigibilitaIVA": "S"
-            },
-            {
-              "AliquotaIVA": "7.45",
-              "Natura": "N7",
-              "ImponibileImporto": "95156435589.52",
-              "EsigibilitaIVA": "S"
-            },
-            {
-              "AliquotaIVA": "049.20",
-              "ImponibileImporto": "-60.00",
-              "Imposta": "-09175510.93",
-              "EsigibilitaIVA": "I"
-            }
-          ]
-        }
-      },
-      {
-        "DatiGenerali": {
-          "DatiGeneraliDocumento": {
-            "TipoDocumento": "TD00",
-            "Divisa": "ECT",
-            "Data": "3450-01-51",
-            "Numero": "sint quis est et"
-          }
-        },
-        "DatiBeniServizi": {
-          "DettaglioLinee": [
-            {
-              "NumeroLinea": 3588,
-              "Descrizione": "ex non pariatur",
-              "PrezzoUnitario": "9.93405",
-              "PrezzoTotale": "-181.93"
-            }
-          ],
-          "DatiRiepilogo": [
-            {
-              "AliquotaIVA": "87.80",
-              "Natura": "N5",
-              "ImponibileImporto": "-3.94",
-              "EsigibilitaIVA": "S"
+              "AliquotaIVA": "4.62",
+              "ImponibileImporto": "742.91",
+              "Imposta": "29405.75"
             }
           ]
         }

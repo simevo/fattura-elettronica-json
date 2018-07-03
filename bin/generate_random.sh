@@ -15,8 +15,10 @@ do
   name=$(printf %02d "$i")
   echo "generating $name.json"
   bin/fake.js > "random/$name.json"
-  echo "validate $name.json"
-  bin/validate_json.js "random/$name.json"
+  echo "validate $name.json with javascript"
+  ./bin/validate_json.js "random/$name.json"
+  echo "validate $name.json with PHP"
+  ./bin/validate_json.php "random/$name.json"
   echo "convert to $name.xml"
   bin/hbs.js "random/$name.json" > "random/$name.xml"
   # echo "validate $name.xml"

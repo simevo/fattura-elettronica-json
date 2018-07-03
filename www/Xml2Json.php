@@ -24,7 +24,8 @@ final class Xml2Json
     private $xml;
     private $array;
 
-    private static function has_string_keys(array $array) {
+    private static function hasStringKeys(array $array)
+    {
         // https://stackoverflow.com/a/4254008
         return count(array_filter(array_keys($array), 'is_string')) > 0;
     }
@@ -35,7 +36,9 @@ final class Xml2Json
             foreach ($node as $key => $value) {
                 // echo "looking at $key of type " . gettype($node[$key]) . " with " . count($value) . " nodes\n";
                 self::normalize($node[$key]);
-                if (is_string($key) && in_array($key, self::$arrayNotation) && (!is_array($node[$key]) || self::has_string_keys($node[$key]))) {
+                if (is_string($key) &&
+                    in_array($key, self::$arrayNotation) &&
+                    (!is_array($node[$key]) || self::hasStringKeys($node[$key]))) {
                     // echo "converting $key\n";
                     $node[$key] = [$node[$key]];
                 }

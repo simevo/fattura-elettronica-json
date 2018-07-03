@@ -11,7 +11,7 @@ var fs = require('fs');
 var validate = require('json-schema/lib/validate').validate;
 
 if (process.argv.length <= 2) {
-    console.log("Usage: json2xml file.json");
+    console.log("Usage: validate_json.js file.json");
     process.exit(-1);
 }
 

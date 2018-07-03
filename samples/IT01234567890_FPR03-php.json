@@ -1,0 +1,178 @@
+{
+    "FatturaElettronica": {
+        "FatturaElettronicaHeader": {
+            "DatiTrasmissione": {
+                "IdTrasmittente": {
+                    "IdPaese": "IT",
+                    "IdCodice": "01234567890"
+                },
+                "ProgressivoInvio": "00001",
+                "FormatoTrasmissione": "FPR12",
+                "CodiceDestinatario": "ABC1234",
+                "ContattiTrasmittente": []
+            },
+            "CedentePrestatore": {
+                "DatiAnagrafici": {
+                    "IdFiscaleIVA": {
+                        "IdPaese": "IT",
+                        "IdCodice": "01234567890"
+                    },
+                    "Anagrafica": {
+                        "Denominazione": "SOCIETA' ALPHA SRL"
+                    },
+                    "RegimeFiscale": "RF01"
+                },
+                "Sede": {
+                    "Indirizzo": "VIALE ROMA 543",
+                    "CAP": "07100",
+                    "Comune": "SASSARI",
+                    "Provincia": "SS",
+                    "Nazione": "IT"
+                }
+            },
+            "CessionarioCommittente": {
+                "DatiAnagrafici": {
+                    "CodiceFiscale": "09876543210",
+                    "Anagrafica": {
+                        "Denominazione": "BETA GAMMA"
+                    }
+                },
+                "Sede": {
+                    "Indirizzo": "VIA TORINO 38-B",
+                    "CAP": "00145",
+                    "Comune": "ROMA",
+                    "Provincia": "RM",
+                    "Nazione": "IT"
+                }
+            }
+        },
+        "FatturaElettronicaBody": [
+            {
+                "DatiGenerali": {
+                    "DatiGeneraliDocumento": {
+                        "TipoDocumento": "TD01",
+                        "Divisa": "EUR",
+                        "Data": "2014-12-18",
+                        "Numero": "123",
+                        "Causale": [
+                            "LA FATTURA FA RIFERIMENTO AD UNA OPERAZIONE AAAA BBBBBBBBBBBBBBBBBB CCC DDDDDDDDDDDDDDD E FFFFFFFFFFFFFFFFFFFF GGGGGGGGGG HHHHHHH II LLLLLLLLLLLLLLLLL MMM NNNNN OO PPPPPPPPPPP QQQQ RRRR SSSSSSSSSSSSSS",
+                            "SEGUE DESCRIZIONE CAUSALE NEL CASO IN CUI NON SIANO STATI SUFFICIENTI 200 CARATTERI AAAAAAAAAAA BBBBBBBBBBBBBBBBB"
+                        ]
+                    },
+                    "DatiOrdineAcquisto": [
+                        {
+                            "RiferimentoNumeroLinea": [
+                                "1"
+                            ],
+                            "IdDocumento": "66685",
+                            "NumItem": "1"
+                        }
+                    ],
+                    "DatiTrasporto": {
+                        "DatiAnagraficiVettore": {
+                            "IdFiscaleIVA": {
+                                "IdPaese": "IT",
+                                "IdCodice": "24681012141"
+                            },
+                            "Anagrafica": {
+                                "Denominazione": "Trasporto spa"
+                            }
+                        },
+                        "DataOraConsegna": "2012-10-22T16:46:12.000+02:00"
+                    }
+                },
+                "DatiBeniServizi": {
+                    "DettaglioLinee": [
+                        {
+                            "NumeroLinea": "1",
+                            "Descrizione": "LA DESCRIZIONE DELLA FORNITURA PUO' SUPERARE I CENTO CARATTERI CHE RAPPRESENTAVANO IL PRECEDENTE LIMITE DIMENSIONALE. TALE LIMITE NELLA NUOVA VERSIONE E' STATO PORTATO A MILLE CARATTERI",
+                            "Quantita": "5.00",
+                            "PrezzoUnitario": "1.00",
+                            "PrezzoTotale": "5.00",
+                            "AliquotaIVA": "22.00"
+                        },
+                        {
+                            "NumeroLinea": "2",
+                            "Descrizione": "FORNITURE VARIE PER UFFICIO",
+                            "Quantita": "10.00",
+                            "PrezzoUnitario": "2.00",
+                            "PrezzoTotale": "20.00",
+                            "AliquotaIVA": "22.00"
+                        }
+                    ],
+                    "DatiRiepilogo": [
+                        {
+                            "AliquotaIVA": "22.00",
+                            "ImponibileImporto": "27.00",
+                            "Imposta": "5.95",
+                            "EsigibilitaIVA": "I"
+                        }
+                    ]
+                },
+                "DatiPagamento": [
+                    {
+                        "CondizioniPagamento": "TP01",
+                        "DettaglioPagamento": {
+                            "ModalitaPagamento": "MP01",
+                            "DataScadenzaPagamento": "2015-01-30",
+                            "ImportoPagamento": "32.95"
+                        }
+                    }
+                ]
+            },
+            {
+                "DatiGenerali": {
+                    "DatiGeneraliDocumento": {
+                        "TipoDocumento": "TD01",
+                        "Divisa": "EUR",
+                        "Data": "2014-12-20",
+                        "Numero": "456",
+                        "Causale": [
+                            "LA FATTURA FA RIFERIMENTO AD UNA OPERAZIONE AAAA BBBBBBBBBBBBBBBBBB CCC DDDDDDDDDDDDDDD E FFFFFFFFFFFFFFFFFFFF GGGGGGGGGG HHHHHHH II LLLLLLLLLLLLLLLLL MMM NNNNN OO PPPPPPPPPPP QQQQ RRRR SSSSSSSSSSSSSS",
+                            "SEGUE DESCRIZIONE CAUSALE NEL CASO IN CUI NON SIANO STATI SUFFICIENTI 200 CARATTERI AAAAAAAAAAA BBBBBBBBBBBBBBBBB"
+                        ]
+                    },
+                    "DatiOrdineAcquisto": [
+                        {
+                            "RiferimentoNumeroLinea": [
+                                "1"
+                            ],
+                            "IdDocumento": "66685",
+                            "NumItem": "1"
+                        }
+                    ]
+                },
+                "DatiBeniServizi": {
+                    "DettaglioLinee": [
+                        {
+                            "NumeroLinea": "1",
+                            "Descrizione": "PRESTAZIONE DEL SEGUENTE SERVIZIO PROFESSIONALE: LA DESCRIZIONE DELLA PRESTAZIONE PUO' SUPERARE I CENTO CARATTERI CHE RAPPRESENTAVANO IL PRECEDENTE LIMITE DIMENSIONALE. TALE LIMITE NELLA NUOVA VERSIONE E' STATO PORTATO A MILLE CARATTERI",
+                            "PrezzoUnitario": "2000.00",
+                            "PrezzoTotale": "2000.00",
+                            "AliquotaIVA": "22.00"
+                        }
+                    ],
+                    "DatiRiepilogo": [
+                        {
+                            "AliquotaIVA": "22.00",
+                            "ImponibileImporto": "2000.00",
+                            "Imposta": "440.00",
+                            "EsigibilitaIVA": "I"
+                        }
+                    ]
+                },
+                "DatiPagamento": [
+                    {
+                        "CondizioniPagamento": "TP01",
+                        "DettaglioPagamento": {
+                            "ModalitaPagamento": "MP19",
+                            "DataScadenzaPagamento": "2015-01-28",
+                            "ImportoPagamento": "2440.00"
+                        }
+                    }
+                ]
+            }
+        ],
+        "versione": "FPR12"
+    }
+}

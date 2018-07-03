@@ -3,182 +3,109 @@
   <FatturaElettronicaHeader>
     <DatiTrasmissione>
       <IdTrasmittente>
-        <IdPaese>BU</IdPaese>
-        <IdCodice>ullamco aute</IdCodice>
+        <IdPaese>XF</IdPaese>
+        <IdCodice>est voluptate aute </IdCodice>
       </IdTrasmittente>
-      <ProgressivoInvio>aliquip e</ProgressivoInvio>
-      <FormatoTrasmissione>FPA12</FormatoTrasmissione>
-      <CodiceDestinatario>nostrud</CodiceDestinatario>
+      <ProgressivoInvio>ess</ProgressivoInvio>
+      <FormatoTrasmissione>FPR12</FormatoTrasmissione>
+      <CodiceDestinatario>5M5KSP</CodiceDestinatario>
     </DatiTrasmissione>
     <CedentePrestatore>
       <DatiAnagrafici>
         <IdFiscaleIVA>
-          <IdPaese>SF</IdPaese>
-          <IdCodice>ex dolore</IdCodice>
+          <IdPaese>TK</IdPaese>
+          <IdCodice>fugiat ad amet est in</IdCodice>
         </IdFiscaleIVA>
         <Anagrafica>
-          <Nome>laborum Ut ex est</Nome>
-          <Cognome>non officia nostrud in</Cognome>
+          <Denominazione>velit sunt minim</Denominazione>
+          <Cognome>dolore aliqua labore</Cognome>
         </Anagrafica>
-        <RegimeFiscale>RF89</RegimeFiscale>
+        <RegimeFiscale>RF03</RegimeFiscale>
       </DatiAnagrafici>
       <Sede>
-        <Indirizzo>Lorem in adipisicing cupidatat qui</Indirizzo>
-        <CAP>71501</CAP>
-        <Comune>culpa</Comune>
-        <Nazione>TX</Nazione>
+        <Indirizzo>sed Ut ut elit</Indirizzo>
+        <CAP>16619</CAP>
+        <Comune>aute mollit cillum consectetur</Comune>
+        <Nazione>KV</Nazione>
       </Sede>
     </CedentePrestatore>
     <CessionarioCommittente>
       <DatiAnagrafici>
-        <CodiceFiscale></CodiceFiscale>
         <Anagrafica>
-          <Nome>id Lorem mollit pro</Nome>
-          <Cognome>ad</Cognome>
+          <Denominazione>Duis ex laborum</Denominazione>
+          <Nome>enim commodo</Nome>
         </Anagrafica>
       </DatiAnagrafici>
       <Sede>
-        <Indirizzo>culpa deserunt cillum Dui</Indirizzo>
-        <CAP>84423</CAP>
-        <Comune>adipisicing in </Comune>
-        <Nazione>BU</Nazione>
+        <Indirizzo>officia et</Indirizzo>
+        <CAP>02042</CAP>
+        <Comune>eiusmod id occaecat ut</Comune>
+        <Nazione>KF</Nazione>
       </Sede>
     </CessionarioCommittente>
   </FatturaElettronicaHeader>
   <FatturaElettronicaBody>
     <DatiGenerali>
       <DatiGeneraliDocumento>
-        <TipoDocumento>TD17</TipoDocumento>
-        <Divisa>LPV</Divisa>
-        <Data>9933-98-48</Data>
-        <Numero>officia mo</Numero>
+        <TipoDocumento>TD50</TipoDocumento>
+        <Divisa>FHI</Divisa>
+        <Data>5258-71-61</Data>
+        <Numero>deserunt si</Numero>
       </DatiGeneraliDocumento>
     </DatiGenerali>
     <DatiBeniServizi>
       <DettaglioLinee>
-        <NumeroLinea>7036</NumeroLinea>
-        <Descrizione>consectetur officia laboris ad fugiat</Descrizione>
-        <Quantita>57935.0068</Quantita>
-        <PrezzoUnitario></PrezzoUnitario>
-        <PrezzoTotale>95264762439.21580378</PrezzoTotale>
-        <AliquotaIVA></AliquotaIVA>
-      </DettaglioLinee>
-      <DettaglioLinee>
-        <NumeroLinea>2766</NumeroLinea>
-        <Descrizione></Descrizione>
-        <Quantita>405869.59</Quantita>
-        <PrezzoUnitario>198702.921</PrezzoUnitario>
-        <PrezzoTotale></PrezzoTotale>
-        <AliquotaIVA>18.06</AliquotaIVA>
-      </DettaglioLinee>
-      <DettaglioLinee>
-        <NumeroLinea>6860</NumeroLinea>
-        <Descrizione>Ut officia</Descrizione>
-        <PrezzoUnitario>7441.8496</PrezzoUnitario>
-        <PrezzoTotale></PrezzoTotale>
-        <AliquotaIVA>3.58</AliquotaIVA>
-      </DettaglioLinee>
-      <DettaglioLinee>
-        <NumeroLinea></NumeroLinea>
-        <Descrizione>labore commodo sed elit ad</Descrizione>
-        <Quantita>70854942827.957368</Quantita>
-        <PrezzoUnitario></PrezzoUnitario>
-        <PrezzoTotale>6461.9687137</PrezzoTotale>
-        <AliquotaIVA>427.75</AliquotaIVA>
-      </DettaglioLinee>
-      <DettaglioLinee>
-        <NumeroLinea></NumeroLinea>
-        <Descrizione>incididunt ad reprehenderit dolore</Descrizione>
-        <PrezzoUnitario>-67658767.89406817</PrezzoUnitario>
-        <PrezzoTotale>0308759.000311</PrezzoTotale>
-        <AliquotaIVA>056.84</AliquotaIVA>
+        <NumeroLinea>40</NumeroLinea>
+        <Descrizione>tempor non</Descrizione>
+        <PrezzoUnitario>7058167.275</PrezzoUnitario>
+        <PrezzoTotale>120631.4146</PrezzoTotale>
+        <AliquotaIVA>39.93</AliquotaIVA>
       </DettaglioLinee>
       <DatiRiepilogo>
-        <AliquotaIVA>5.78</AliquotaIVA>
-        <ImponibileImporto>-032.96</ImponibileImporto>
-        <Imposta></Imposta>
-        <EsigibilitaIVA>I</EsigibilitaIVA>
-      </DatiRiepilogo>
-      <DatiRiepilogo>
-        <AliquotaIVA>0.89</AliquotaIVA>
-        <ImponibileImporto>-4347019620.05</ImponibileImporto>
-        <Imposta>107581674.37</Imposta>
-        <EsigibilitaIVA>I</EsigibilitaIVA>
-      </DatiRiepilogo>
-      <DatiRiepilogo>
-        <AliquotaIVA>9.83</AliquotaIVA>
-        <ImponibileImporto></ImponibileImporto>
-        <Imposta>88053701.51</Imposta>
-        <EsigibilitaIVA>S</EsigibilitaIVA>
+        <AliquotaIVA>76.08</AliquotaIVA>
+        <ImponibileImporto>02.66</ImponibileImporto>
+        <Imposta>93767784.35</Imposta>
       </DatiRiepilogo>
     </DatiBeniServizi>
   </FatturaElettronicaBody>
   <FatturaElettronicaBody>
     <DatiGenerali>
       <DatiGeneraliDocumento>
-        <TipoDocumento>TD10</TipoDocumento>
-        <Divisa>KWY</Divisa>
-        <Data>8881-46-46</Data>
-        <Numero>elit aliqu</Numero>
+        <TipoDocumento>TD97</TipoDocumento>
+        <Divisa>UCM</Divisa>
+        <Data>1002-18-07</Data>
+        <Numero>veni</Numero>
       </DatiGeneraliDocumento>
     </DatiGenerali>
     <DatiBeniServizi>
       <DettaglioLinee>
-        <NumeroLinea>5118</NumeroLinea>
-        <Descrizione></Descrizione>
-        <Quantita>45843259.758413</Quantita>
-        <PrezzoUnitario></PrezzoUnitario>
-        <PrezzoTotale>-798856807.01705</PrezzoTotale>
-        <AliquotaIVA>1.91</AliquotaIVA>
+        <NumeroLinea>9418</NumeroLinea>
+        <Descrizione>sint in</Descrizione>
+        <PrezzoUnitario>7.834</PrezzoUnitario>
+        <PrezzoTotale>5.61</PrezzoTotale>
+        <AliquotaIVA>17.67</AliquotaIVA>
       </DettaglioLinee>
       <DettaglioLinee>
-        <NumeroLinea>4348</NumeroLinea>
-        <Descrizione>elit ex sit consectetur</Descrizione>
-        <Quantita>217018.5214</Quantita>
-        <PrezzoUnitario>1189130.24095677</PrezzoUnitario>
-        <PrezzoTotale></PrezzoTotale>
-        <AliquotaIVA></AliquotaIVA>
-      </DettaglioLinee>
-      <DettaglioLinee>
-        <NumeroLinea>8501</NumeroLinea>
-        <Descrizione>sit eu Ut sunt</Descrizione>
-        <PrezzoUnitario>-3036.41882551</PrezzoUnitario>
-        <PrezzoTotale></PrezzoTotale>
-        <AliquotaIVA>5.34</AliquotaIVA>
-      </DettaglioLinee>
-      <DettaglioLinee>
-        <NumeroLinea></NumeroLinea>
-        <Descrizione>qui dolore dolor ea elit</Descrizione>
-        <Quantita>2.674678</Quantita>
-        <PrezzoUnitario>0550.960</PrezzoUnitario>
-        <PrezzoTotale>-61771549273.150</PrezzoTotale>
-        <AliquotaIVA></AliquotaIVA>
-      </DettaglioLinee>
-      <DettaglioLinee>
-        <NumeroLinea>9866</NumeroLinea>
-        <Descrizione></Descrizione>
-        <Quantita>62983.644713</Quantita>
-        <PrezzoUnitario>2144249602.297</PrezzoUnitario>
-        <PrezzoTotale></PrezzoTotale>
-        <AliquotaIVA>74.39</AliquotaIVA>
+        <NumeroLinea>07</NumeroLinea>
+        <Descrizione>Lorem consectetur ea</Descrizione>
+        <PrezzoUnitario>1.3140</PrezzoUnitario>
+        <PrezzoTotale>-6464099090.390</PrezzoTotale>
+        <AliquotaIVA>19.72</AliquotaIVA>
       </DettaglioLinee>
       <DatiRiepilogo>
-        <AliquotaIVA>1.92</AliquotaIVA>
-        <ImponibileImporto></ImponibileImporto>
-        <Imposta>-88057514091.45</Imposta>
-        <EsigibilitaIVA>D</EsigibilitaIVA>
+        <AliquotaIVA>75.75</AliquotaIVA>
+        <ImponibileImporto>064883545.30</ImponibileImporto>
+        <Imposta>-42.95</Imposta>
       </DatiRiepilogo>
       <DatiRiepilogo>
-        <AliquotaIVA>8.80</AliquotaIVA>
-        <ImponibileImporto>-1777268.02</ImponibileImporto>
-        <Imposta>113904898.29</Imposta>
-        <EsigibilitaIVA>D</EsigibilitaIVA>
+        <AliquotaIVA>81.23</AliquotaIVA>
+        <ImponibileImporto>75.55</ImponibileImporto>
+        <Imposta>-90000.05</Imposta>
       </DatiRiepilogo>
       <DatiRiepilogo>
-        <AliquotaIVA>4.60</AliquotaIVA>
-        <ImponibileImporto>416.89</ImponibileImporto>
-        <Imposta>-27.17</Imposta>
-        <EsigibilitaIVA>D</EsigibilitaIVA>
+        <AliquotaIVA>7.11</AliquotaIVA>
+        <ImponibileImporto>6.21</ImponibileImporto>
+        <Imposta>-8817768.61</Imposta>
       </DatiRiepilogo>
     </DatiBeniServizi>
   </FatturaElettronicaBody>

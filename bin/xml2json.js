@@ -1,6 +1,6 @@
 #!/usr/bin/nodejs
 //
-// converts the supplied XML file to JSON
+// converts the supplied XML invoice file to JSON
 //
 // Copyright (c) 2018, Paolo Greppi <paolo.greppi@simevo.com>
 // License: BSD 3-Clause
@@ -11,7 +11,7 @@ var parser = require('xml2json');
 var fs = require('fs');
 
 if (process.argv.length <= 2) {
-    console.log("Usage: xml2json file.json");
+    console.log("Usage: xml2json.js file.xml");
     process.exit(-1);
 }
 

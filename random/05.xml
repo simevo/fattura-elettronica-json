@@ -3,143 +3,136 @@
   <FatturaElettronicaHeader>
     <DatiTrasmissione>
       <IdTrasmittente>
-        <IdPaese>XL</IdPaese>
-        <IdCodice>anim enim culp</IdCodice>
+        <IdPaese>PC</IdPaese>
+        <IdCodice>cupidatat dolore repreh</IdCodice>
       </IdTrasmittente>
-      <ProgressivoInvio>aliqu</ProgressivoInvio>
-      <FormatoTrasmissione>FPA12</FormatoTrasmissione>
-      <CodiceDestinatario>aliqua </CodiceDestinatario>
+      <ProgressivoInvio>et eni</ProgressivoInvio>
+      <FormatoTrasmissione>FPR12</FormatoTrasmissione>
+      <CodiceDestinatario>6115GU</CodiceDestinatario>
     </DatiTrasmissione>
     <CedentePrestatore>
       <DatiAnagrafici>
         <IdFiscaleIVA>
-          <IdPaese>YO</IdPaese>
-          <IdCodice>offi</IdCodice>
+          <IdPaese>FW</IdPaese>
+          <IdCodice>ut Ut irure ad</IdCodice>
         </IdFiscaleIVA>
         <Anagrafica>
-          <Denominazione>ut Ut dolor</Denominazione>
-          <Cognome>Excepteur ipsum sit laboris laborum</Cognome>
+          <Denominazione>in fugiat</Denominazione>
+          <Cognome>eiusmod Ex</Cognome>
         </Anagrafica>
-        <RegimeFiscale>RF13</RegimeFiscale>
+        <RegimeFiscale>RF38</RegimeFiscale>
       </DatiAnagrafici>
       <Sede>
-        <Indirizzo>enim sed non fugiat</Indirizzo>
-        <CAP>34960</CAP>
-        <Comune>ea incididunt qui enim</Comune>
-        <Nazione>PR</Nazione>
+        <Indirizzo>culpa </Indirizzo>
+        <CAP>12541</CAP>
+        <Comune>ad</Comune>
+        <Nazione>FV</Nazione>
       </Sede>
     </CedentePrestatore>
     <CessionarioCommittente>
       <DatiAnagrafici>
-        <CodiceFiscale></CodiceFiscale>
         <Anagrafica>
-          <Denominazione>veniam Lorem dolore do comm</Denominazione>
-          <Nome>nostrud dolor magna et</Nome>
+          <Nome>velit dolo</Nome>
+          <Cognome>exercitation dolore occaecat incididunt</Cognome>
         </Anagrafica>
       </DatiAnagrafici>
       <Sede>
-        <Indirizzo>cupidatat velit </Indirizzo>
-        <CAP>28924</CAP>
-        <Comune>fugiat dolor</Comune>
-        <Nazione>UL</Nazione>
+        <Indirizzo>ullamco in</Indirizzo>
+        <CAP>82391</CAP>
+        <Comune>velit</Comune>
+        <Nazione>UM</Nazione>
       </Sede>
     </CessionarioCommittente>
   </FatturaElettronicaHeader>
   <FatturaElettronicaBody>
     <DatiGenerali>
       <DatiGeneraliDocumento>
-        <TipoDocumento>TD88</TipoDocumento>
-        <Divisa>NJE</Divisa>
-        <Data>2148-41-34</Data>
-        <Numero>e</Numero>
+        <TipoDocumento>TD81</TipoDocumento>
+        <Divisa>XZV</Divisa>
+        <Data>8439-06-47</Data>
+        <Numero>cul</Numero>
       </DatiGeneraliDocumento>
     </DatiGenerali>
     <DatiBeniServizi>
       <DettaglioLinee>
-        <NumeroLinea>3561</NumeroLinea>
-        <Descrizione>ut pariatur</Descrizione>
-        <PrezzoUnitario>-91.8944</PrezzoUnitario>
-        <PrezzoTotale></PrezzoTotale>
-        <AliquotaIVA>919.30</AliquotaIVA>
+        <NumeroLinea>2</NumeroLinea>
+        <Descrizione>ea minim eu</Descrizione>
+        <PrezzoUnitario>3830.44017571</PrezzoUnitario>
+        <PrezzoTotale>83.24930</PrezzoTotale>
+        <AliquotaIVA>8.34</AliquotaIVA>
       </DettaglioLinee>
       <DettaglioLinee>
-        <NumeroLinea>8496</NumeroLinea>
-        <Descrizione></Descrizione>
-        <Quantita>7.41989353</Quantita>
-        <PrezzoUnitario></PrezzoUnitario>
-        <PrezzoTotale>446476967.2163</PrezzoTotale>
-        <AliquotaIVA>14.30</AliquotaIVA>
+        <NumeroLinea>99</NumeroLinea>
+        <Descrizione>minim qui mollit nulla in</Descrizione>
+        <PrezzoUnitario>-5225.4474283</PrezzoUnitario>
+        <PrezzoTotale>314659.021521</PrezzoTotale>
+        <AliquotaIVA>49.39</AliquotaIVA>
       </DettaglioLinee>
       <DatiRiepilogo>
-        <AliquotaIVA></AliquotaIVA>
-        <ImponibileImporto>1158.60</ImponibileImporto>
-        <Imposta>85642038941.33</Imposta>
-        <EsigibilitaIVA>D</EsigibilitaIVA>
+        <AliquotaIVA>54.52</AliquotaIVA>
+        <ImponibileImporto>-477173923.93</ImponibileImporto>
+        <Imposta>1408490333.21</Imposta>
       </DatiRiepilogo>
       <DatiRiepilogo>
-        <AliquotaIVA>68.91</AliquotaIVA>
-        <ImponibileImporto>0.39</ImponibileImporto>
-        <Imposta>-457.74</Imposta>
-        <EsigibilitaIVA>S</EsigibilitaIVA>
+        <AliquotaIVA>05.04</AliquotaIVA>
+        <ImponibileImporto>-753252858.06</ImponibileImporto>
+        <Imposta>968732942.05</Imposta>
       </DatiRiepilogo>
       <DatiRiepilogo>
-        <AliquotaIVA></AliquotaIVA>
-        <ImponibileImporto>644.37</ImponibileImporto>
-        <Imposta>934847468.93</Imposta>
-        <EsigibilitaIVA>D</EsigibilitaIVA>
+        <AliquotaIVA>7.58</AliquotaIVA>
+        <ImponibileImporto>-93332769593.63</ImponibileImporto>
+        <Imposta>581407791.76</Imposta>
+      </DatiRiepilogo>
+      <DatiRiepilogo>
+        <AliquotaIVA>71.98</AliquotaIVA>
+        <ImponibileImporto>37470.80</ImponibileImporto>
+        <Imposta>5715681.84</Imposta>
       </DatiRiepilogo>
     </DatiBeniServizi>
   </FatturaElettronicaBody>
   <FatturaElettronicaBody>
     <DatiGenerali>
       <DatiGeneraliDocumento>
-        <TipoDocumento>TD30</TipoDocumento>
-        <Divisa>JMY</Divisa>
-        <Data>1743-95-75</Data>
-        <Numero>sit deserunt</Numero>
+        <TipoDocumento>TD94</TipoDocumento>
+        <Divisa>EUU</Divisa>
+        <Data>9869-56-76</Data>
+        <Numero>eiusmod qui </Numero>
       </DatiGeneraliDocumento>
     </DatiGenerali>
     <DatiBeniServizi>
       <DettaglioLinee>
-        <NumeroLinea>3244</NumeroLinea>
-        <Descrizione>occaecat</Descrizione>
-        <Quantita>4618959.19956973</Quantita>
-        <PrezzoUnitario>9454312183.193629</PrezzoUnitario>
-        <PrezzoTotale></PrezzoTotale>
-        <AliquotaIVA></AliquotaIVA>
+        <NumeroLinea>0395</NumeroLinea>
+        <Descrizione>in nisi</Descrizione>
+        <PrezzoUnitario>-897155862.1997</PrezzoUnitario>
+        <PrezzoTotale>0669.10</PrezzoTotale>
+        <AliquotaIVA>1.78</AliquotaIVA>
       </DettaglioLinee>
       <DettaglioLinee>
-        <NumeroLinea>7139</NumeroLinea>
-        <Descrizione>sed cupidatat sint</Descrizione>
-        <PrezzoUnitario></PrezzoUnitario>
-        <PrezzoTotale>85.594268</PrezzoTotale>
-        <AliquotaIVA>5.96</AliquotaIVA>
-      </DettaglioLinee>
-      <DettaglioLinee>
-        <NumeroLinea>2440</NumeroLinea>
-        <Descrizione>dolore magna</Descrizione>
-        <Quantita>63.590885</Quantita>
-        <PrezzoUnitario></PrezzoUnitario>
-        <PrezzoTotale></PrezzoTotale>
-        <AliquotaIVA>522.26</AliquotaIVA>
+        <NumeroLinea>4</NumeroLinea>
+        <Descrizione>deserunt dolore</Descrizione>
+        <PrezzoUnitario>-023.857698</PrezzoUnitario>
+        <PrezzoTotale>-52780933.48722284</PrezzoTotale>
+        <AliquotaIVA>43.28</AliquotaIVA>
       </DettaglioLinee>
       <DatiRiepilogo>
-        <AliquotaIVA>2.55</AliquotaIVA>
-        <ImponibileImporto>-48284023105.17</ImponibileImporto>
-        <Imposta></Imposta>
-        <EsigibilitaIVA>I</EsigibilitaIVA>
+        <AliquotaIVA>63.25</AliquotaIVA>
+        <ImponibileImporto>2447.12</ImponibileImporto>
+        <Imposta>4020935457.97</Imposta>
       </DatiRiepilogo>
       <DatiRiepilogo>
-        <AliquotaIVA>2.03</AliquotaIVA>
-        <ImponibileImporto></ImponibileImporto>
-        <Imposta>-42963779557.43</Imposta>
-        <EsigibilitaIVA>S</EsigibilitaIVA>
+        <AliquotaIVA>2.90</AliquotaIVA>
+        <ImponibileImporto>-85227.53</ImponibileImporto>
+        <Imposta>727.46</Imposta>
       </DatiRiepilogo>
       <DatiRiepilogo>
-        <AliquotaIVA>87.34</AliquotaIVA>
-        <ImponibileImporto></ImponibileImporto>
-        <Imposta>-9881154869.73</Imposta>
-        <EsigibilitaIVA>S</EsigibilitaIVA>
+        <AliquotaIVA>15.02</AliquotaIVA>
+        <ImponibileImporto>08592.76</ImponibileImporto>
+        <Imposta>-78077992311.13</Imposta>
+      </DatiRiepilogo>
+      <DatiRiepilogo>
+        <AliquotaIVA>57.44</AliquotaIVA>
+        <ImponibileImporto>-947.78</ImponibileImporto>
+        <Imposta>-87849647726.03</Imposta>
       </DatiRiepilogo>
     </DatiBeniServizi>
   </FatturaElettronicaBody>
