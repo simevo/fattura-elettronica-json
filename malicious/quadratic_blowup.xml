@@ -1,0 +1,5 @@
+<!DOCTYPE root [
+ <!ELEMENT root ANY>
+ <!ENTITY A "AAAAA...(a 100.000 A's)...AAAAA">
+]>
+<root>&A;&A;&A;&A;...(a 100.000 &A;'s)...&A;&A;&A;&A;&A;</root>

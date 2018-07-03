@@ -48,8 +48,17 @@ final class Xml2Json
 
     public function __construct(string $filename)
     {
+        // defend against XML External Entity Injection
+        libxml_disable_entity_loader(true);
+        $xml_string = file_get_contents($filename);
+        $collapsed_xml_string = preg_replace("/[:space:]/g", "", $xml_string);
+        $collapsed_xml_string = $collapsed_xml_string ? $collapsed_xml_string : $xml_string;
+        if (preg_match("/\<!DOCTYPE/i", $collapsed_xml_string)) {
+            throw new \InvalidArgumentException('Invalid XML: Detected use of illegal DOCTYPE');
+        }
+
         libxml_use_internal_errors(true);
-        $this->xml = simplexml_load_file($filename, 'SimpleXMLElement', LIBXML_NOWARNING);
+        $this->xml = simplexml_load_string($xml_string, 'SimpleXMLElement', LIBXML_NOWARNING);
         if ($this->xml === false) {
             throw new \InvalidArgumentException("Cannot load xml file.\n");
         }

