@@ -806,9 +806,8 @@
                         "maxLength": 100
                       },
                       "NumeroColli": {
-                        "type": "integer",
-                        "minimum": 1,
-                        "maximum": 9999
+                        "type": "string",
+                        "pattern": "^[0-9]{1,4}$"
                       },
                       "Descrizione": {
                         "type": "string",
@@ -967,9 +966,8 @@
                           "type": "array",
                           "title": "Numero identificativo della linea di dettaglio ",
                           "items": {
-                            "type": "integer",
-                            "minimum": 1,
-                            "maximum": 9999,
+                            "type": "string",
+                            "pattern": "^[0-9]{1,4}$",
                             "default": "",
                             "examples": [
                               1
@@ -1026,9 +1024,8 @@
                           "type": "array",
                           "title": "Numero identificativo della linea di dettaglio ",
                           "items": {
-                            "type": "integer",
-                            "minimum": 1,
-                            "maximum": 9999,
+                            "type": "string",
+                            "pattern": "^[0-9]{1,4}$",
                             "default": "",
                             "examples": [
                               1
@@ -1085,9 +1082,8 @@
                           "type": "array",
                           "title": "Numero identificativo della linea di dettaglio ",
                           "items": {
-                            "type": "integer",
-                            "minimum": 1,
-                            "maximum": 9999,
+                            "type": "string",
+                            "pattern": "^[0-9]{1,4}$",
                             "default": "",
                             "examples": [
                               1
@@ -1144,9 +1140,8 @@
                           "type": "array",
                           "title": "Numero identificativo della linea di dettaglio ",
                           "items": {
-                            "type": "integer",
-                            "minimum": 1,
-                            "maximum": 9999,
+                            "type": "string",
+                            "pattern": "^[0-9]{1,4}$",
                             "default": "",
                             "examples": [
                               1
@@ -1203,9 +1198,8 @@
                           "type": "array",
                           "title": "Numero identificativo della linea di dettaglio ",
                           "items": {
-                            "type": "integer",
-                            "minimum": 1,
-                            "maximum": 9999,
+                            "type": "string",
+                            "pattern": "^[0-9]{1,4}$",
                             "default": "",
                             "examples": [
                               1
@@ -1254,9 +1248,8 @@
                       "type":"object",
                       "properties": {
                         "RiferimentoFase": {
-                          "type": "integer",
-                          "minimum": 1,
-                          "maximum": 999,
+                          "type": "string",
+                          "pattern": "^[0-9]{1-3}$",
                           "title": "Fase dello stato avanzamento cui la fattura si riferisce",
                           "default": "",
                           "examples": [
@@ -1293,9 +1286,8 @@
                           "title": "Numero della linea o delle linee di dettaglio della fattura alle quali si riferisce il DDT (così come identificato dagli elementi NumeroDDT e DataDDT)",
                           "description": "nel caso in cui il documento di trasporto si riferisce all’intera fattura, questo elemento non deve essere valorizzato",
                           "items": {
-                            "type": "integer",
-                            "minimum": 1,
-                            "maximum": 9999,
+                            "type": "string",
+                            "pattern": "^[0-9]{1,4}$",
                             "default": "",
                             "examples": [
                               1
@@ -1320,9 +1312,8 @@
                       "type": "object",
                       "properties": {
                         "NumeroLinea": {
-                          "type": "integer",
-                          "minimum": 1,
-                          "maximum": 9999,
+                          "type": "string",
+                          "pattern": "^[0-9]{1,4}$",
                           "title": "Numero identificativo della linea di dettaglio ",
                           "default": "",
                           "examples": [

@@ -16,7 +16,7 @@ do
   echo "generating $name.json"
   bin/fake.js > "random/$name.json"
   echo "validate $name.json"
-  bin/validate.js "random/$name.json"
+  bin/validate_json.js "random/$name.json"
   echo "convert to $name.xml"
   bin/hbs.js "random/$name.json" > "random/$name.xml"
   # echo "validate $name.xml"

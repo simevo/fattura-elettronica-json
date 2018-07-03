@@ -10,6 +10,8 @@ set -e
 
 for name in "samples/IT01234567890_FPA01.json" "samples/IT01234567890_FPA02.json" "samples/IT01234567890_FPA03.json" "samples/IT01234567890_FPR01.json" "samples/IT01234567890_FPR02.json" "samples/IT01234567890_FPR03.json"
 do
-  echo "validating $name"
-  ./bin/validate.js "$name"
+  echo "validating $name with javascript"
+  ./bin/validate_json.js "$name"
+  echo "validating $name with PHP"
+  ./bin/validate_json.php "$name"
 done

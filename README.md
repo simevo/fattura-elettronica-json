@@ -18,7 +18,7 @@ Poiché per lo sviluppo di API ed SDK è più comodo manipolare i dati in format
 ## Prerequisiti
 
 ```
-sudo apt install make nodejs yarnpkg php-cli libxml2-utils composer
+sudo apt install make nodejs yarnpkg php-cli libxml2-utils composer phpunit shellcheck
 yarnpkg install
 composer install
 ```
@@ -34,8 +34,6 @@ Innanzitutto lo [schema XML (*XSD**)](https://en.wikipedia.org/wiki/XML_Schema_(
 -   <xs:import namespace="http://www.w3.org/2000/09/xmldsig#" schemaLocation="http://www.w3.org/TR/2002/REC-xmldsig-core-20020212/xmldsig-core-schema.xsd" />
 +   <xs:import namespace="http://www.w3.org/2000/09/xmldsig#" schemaLocation="xmldsig-core-schema.xsd"/>
 ```
-
-Quindi i files XML di esempio tratti dal sito `fatturapa.gov.it` sono stati validati con questo schema così modificato (script [`bin/validate_samples.sh`](bin/validate_samples.sh)).
 
 Le fatture in formato JSON possono essere validate per mezzo di un **JSON schema** (vedi [paragrafo Riferimenti](#riferimenti)), anche se quest'ultimo è più limitato dello schema XML, alcuni vincoli dovranno essere validati dall'applicazione, ad esempio:
 
@@ -69,7 +67,7 @@ nodejs ./node_modules/jgexml/testxsd2j.js Schema_del_file_xml_FatturaPA_versione
 ```
 ottenendo però uno schema non utilizzabile.
 
-Successivamente i files XML di esempio sono stati convertiti a JSON per mezzo della libreria [node-xml2json](https://github.com/buglabs/node-xml2json) (script [`bin/convert_samples.sh`](bin/convert_samples.sh)).
+Successivamente i files XML di esempio sono stati convertiti a JSON per mezzo della libreria javascript [node-xml2json](https://github.com/buglabs/node-xml2json) (script [`bin/convert_samples.sh`](bin/convert_samples.sh)).
 
 La liberia xml2json [non è supportata nel browser](https://github.com/buglabs/node-xml2json/issues/97) quindi per i client la conversione va fatta server side con lo script PHP [`www/xml2json.php`](www/xml2json.php), ad esempio:
 ```
@@ -78,14 +76,40 @@ curl -X POST -F 'xml=@samples/IT01234567890_FPA01.xml' http://localhost:8000/xml
 
 Si è quindi generato uno schema a partire dai files fattura JSON di esempio, per mezzo del servizio on-line [jsonschema.net](https://www.jsonschema.net/), che dopo semplificazione (`grep -v '$id'`) e aggiustamento manuale aggiunta di campi `title` e `description` desunti dalle SPECIFICHE TECNICHE OPERATIVE DEL FORMATO DELLA FATTURA DEL SISTEMA DI INTERSCAMBIO ha dato origine allo schema [`fatturaPA_1.2_schema.json`](fatturaPA_1.2_schema.json).
 
-Tutti i files di esempio JSON sono validati dallo schema (script [`bin/validate_samples_json.sh`](bin/validate_samples_json.sh)).
-
 La generazione di files XML random a scopo di test è possibile con alcuni strumenti commerciali, ad esempio:
 - https://msdn.microsoft.com/en-us/library/aa302296.aspx "Generating XML Documents from XML Schemas" Priya Lakshminarayanan, Microsoft Corporation - August 2004
 - https://msdn.microsoft.com/en-us/library/dd489258.aspx "How to: Create an XML Document Based on an XSD Schema Visual Studio 2015"
 - https://msdn.microsoft.com/en-us/library/cc716766.aspx "XML Schema Explorer"
 
 In questo proof-of-concept si è scelto di generare dei files JSON random partendo dallo schema JSON per mezzo di [json-schema-faker](https://github.com/json-schema-faker/json-schema-faker), e di riconvertirli a XML per mezzo del template [handlebars](http://handlebarsjs.com/) [`fatturaPA_1.2.hbs`](fatturaPA_1.2.hbs) (script [`bin/generate_random.sh`](bin/generate_random.sh)).
+
+## Contributing
+
+Check your changes with:
+```
+# lint javascript
+./node_modules/jshint/bin/jshint --extract=auto www/index.html
+./node_modules/jshint/bin/jshint bin/*.js
+# lint shell scripts
+shellcheck bin/*.sh
+# lint PHP
+./vendor/bin/phpcs --standard=PSR2 tests/*.php
+./vendor/bin/phpcs --standard=PSR2 www/*.php
+./vendor/bin/phpcs --standard=PSR2 bin/*.php
+```
+
+You **must** use the [git-flow workflow](https://danielkummer.github.io/git-flow-cheatsheet/)
+
+## Test
+
+I files XML di esempio tratti dal sito `fatturapa.gov.it` sono stati validati con lo schema XML modificato (script [`bin/validate_samples_xml.sh`](bin/validate_samples_xml.sh)).
+
+Tutti i files di esempio XML convertiti a JSON per mezzo della libreria javascript node-xml2json sono stati validati con lo schema JSON sia col validatore javascript che col validatore PHP (script [`bin/validate_samples_json.sh`](bin/validate_samples_json.sh)).
+
+Test della classe PHP `Xml2Json`:
+```
+phpunit --testdox tests
+```
 
 Il template handlebars è stato validato riconvertendo ad XML i files di esempio (script [`bin/reconvert_samples.sh`](bin/reconvert_samples.sh)).
 
