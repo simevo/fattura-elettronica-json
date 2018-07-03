@@ -18,8 +18,9 @@ Poiché per lo sviluppo di API ed SDK è più comodo manipolare i dati in format
 ## Prerequisiti
 
 ```
-sudo apt install make nodejs yarnpkg python libxml2-utils
+sudo apt install make nodejs yarnpkg php-cli libxml2-utils composer
 yarnpkg install
+composer install
 ```
 
 ## Procedura
@@ -70,6 +71,11 @@ ottenendo però uno schema non utilizzabile.
 
 Successivamente i files XML di esempio sono stati convertiti a JSON per mezzo della libreria [node-xml2json](https://github.com/buglabs/node-xml2json) (script [`bin/convert_samples.sh`](bin/convert_samples.sh)).
 
+La liberia xml2json [non è supportata nel browser](https://github.com/buglabs/node-xml2json/issues/97) quindi per i client la conversione va fatta server side con lo script PHP [`www/xml2json.php`](www/xml2json.php), ad esempio:
+```
+curl -X POST -F 'xml=@samples/IT01234567890_FPA01.xml' http://localhost:8000/xml2json.php
+```
+
 Si è quindi generato uno schema a partire dai files fattura JSON di esempio, per mezzo del servizio on-line [jsonschema.net](https://www.jsonschema.net/), che dopo semplificazione (`grep -v '$id'`) e aggiustamento manuale aggiunta di campi `title` e `description` desunti dalle SPECIFICHE TECNICHE OPERATIVE DEL FORMATO DELLA FATTURA DEL SISTEMA DI INTERSCAMBIO ha dato origine allo schema [`fatturaPA_1.2_schema.json`](fatturaPA_1.2_schema.json).
 
 Tutti i files di esempio JSON sono validati dallo schema (script [`bin/validate_samples_json.sh`](bin/validate_samples_json.sh)).
@@ -90,9 +96,9 @@ Con lo schema così ottenuto e [JSON Editor](https://github.com/json-editor/json
 Per lanciare il demo:
 ```
 make
-python -m SimpleHTTPServer
+php -S localhost:8000 -t www
 ```
-quindi visitare http://localhost:8000/www/index.html
+quindi visitare http://localhost:8000/index.html
 
 ## Legalese
 
