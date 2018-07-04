@@ -51,7 +51,7 @@ final class Xml2Json
         // defend against XML External Entity Injection
         libxml_disable_entity_loader(true);
         $xml_string = file_get_contents($filename);
-        $collapsed_xml_string = preg_replace("/[:space:]/g", "", $xml_string);
+        $collapsed_xml_string = preg_replace("/\s+/", "", $xml_string);
         $collapsed_xml_string = $collapsed_xml_string ? $collapsed_xml_string : $xml_string;
         if (preg_match("/\<!DOCTYPE/i", $collapsed_xml_string)) {
             throw new \InvalidArgumentException('Invalid XML: Detected use of illegal DOCTYPE');
