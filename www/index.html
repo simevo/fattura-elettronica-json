@@ -79,7 +79,7 @@
       };
       document.getElementById("carica_xml").onclick = function() {
         var request = new XMLHttpRequest();
-        request.open("POST", "/xml2json.php");
+        request.open("POST", "xml2json.php");
         var form = document.getElementById("xml_fileinfo");
         var data_to = new FormData(form);
         console.log(data_to);
