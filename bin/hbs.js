@@ -16,9 +16,6 @@ if (process.argv.length <= 2) {
 }
 
 var Handlebars = require('handlebars');
-Handlebars.registerHelper('with', function(context, options) {
-  return options.fn(context);
-});
 var source = fs.readFileSync('fatturaPA_1.2.hbs', 'utf-8');
 var template = Handlebars.compile(source);
 var filename = process.argv[2];
