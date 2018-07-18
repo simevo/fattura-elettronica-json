@@ -1,6 +1,7 @@
 {
     "require": {
         "squizlabs/php_codesniffer": "*",
-        "justinrainbow/json-schema": "^5.2"
+        "justinrainbow/json-schema": "^5.2",
+        "twig/twig": "^2.5"
     }
 }
