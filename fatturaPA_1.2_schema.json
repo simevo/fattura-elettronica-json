@@ -1676,6 +1676,17 @@
                             "MP01"
                           ]
                         },
+                        "ImportoPagamento": {
+                          "type": "string",
+                          "title": "Importo relativo al pagamento",
+                          "pattern": "^-?[0-9]{1,11}\\.[0-9]{2}$",
+                          "default": "",
+                          "examples": [
+                            "6.10"
+                          ]
+                        }
+                      },
+                      "additionalProperties": {
                         "DataScadenzaPagamento": {
                           "type": "string",
                           "title": "Data di scadenza del pagamento",
@@ -1686,16 +1697,126 @@
                             "2017-02-18"
                           ]
                         },
-                        "ImportoPagamento": {
+                        "DataRiferimentoTerminiPagamento": {
                           "type": "string",
-                          "title": "Importo relativo al pagamento",
-                          "pattern": "^-?[0-9]{1,11}\\.[0-9]{2}$",
+                          "title": "Data dalla quale decorrono i termini di pagamento",
+                          "description": "Rappresentata secondo il formato ISO 8601:2004 (https://it.wikipedia.org/wiki/ISO_8601), con la seguente precisione: YYYY-MM-DD",
+                          "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$",
                           "default": "",
                           "examples": [
-                            "6.10"
+                            "2017-02-18"
                           ]
+                        },
+                        "DataLimitePagamentoAnticipato": {
+                          "type": "string",
+                          "title": "Data limite stabilita per il pagamento anticipato",
+                          "description": "Rappresentata secondo il formato ISO 8601:2004 (https://it.wikipedia.org/wiki/ISO_8601), con la seguente precisione: YYYY-MM-DD",
+                          "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$",
+                          "default": "",
+                          "examples": [
+                            "2017-02-18"
+                          ]
+                        },
+                        "DataDecorrenzaPenale": {
+                          "type": "string",
+                          "title": "Data di decorrenza della penale",
+                          "description": "Rappresentata secondo il formato ISO 8601:2004 (https://it.wikipedia.org/wiki/ISO_8601), con la seguente precisione: YYYY-MM-DD",
+                          "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$",
+                          "default": "",
+                          "examples": [
+                            "2017-02-18"
+                          ]
+                        },
+                        "Beneficiario": {
+                          "type": "string",
+                          "title": "Beneficiario del pagamento",
+                          "default": "",
+                          "minLength": 1,
+                          "maxLength": 200
+                        },
+                        "NomeQuietanzante": {
+                          "type": "string",
+                          "title": "Nome del quietanzante (nei casi di modalità di pagamento di “contanti presso tesoreria”)",
+                          "maxLength": 60
+                        },
+                        "CognomeQuietanzante": {
+                          "type": "string",
+                          "title": "Cognome del quietanzante (nei casi di modalità di pagamento di “contanti presso tesoreria”)",
+                          "maxLength": 60
+                        },
+                        "CodUfficioPostale": {
+                          "type": "string",
+                          "title": "Codice dell'Ufficio Postale (nei casi di modalità di pagamento che ne presuppongono l’indicazione)",
+                          "minLength": 1,
+                          "maxLength": 20,
+                          "default": ""
+                        },
+                        "CodicePagamento": {
+                          "type": "string",
+                          "title": "Codice del pagamento",
+                          "minLength": 1,
+                          "maxLength": 60,
+                          "default": ""
+                        },
+                        "IstitutoFinanziario": {
+                          "type": "string",
+                          "title": "Nome dell'Istituto Finanziario presso il quale effettuare il pagamento",
+                          "maxLength": 60
+                        },
+                        "TitoloQuietanzante": {
+                          "type": "string",
+                          "title": "Titolo del quietanzante (nei casi di modalità di pagamento di “contanti presso tesoreria”)",
+                          "minLength": 2,
+                          "maxLength": 10,
+                          "default": ""
+                        },
+                        "CFQuietanzante": {
+                          "type": "string",
+                          "title": "Codice fiscale del quietanzante (nei casi di modalità di pagamento di “contanti presso tesoreria”)",
+                          "pattern": "^[A-Z0-9]{11,16}$"
+                        },
+                        "GiorniTerminiPagamento": {
+                          "type": "string",
+                          "title": "Termine di pagamento espresso in giorni a partire dalla data dalla quale decorrono i termini di pagamento",
+                          "default": "",
+                          "pattern": "^[0-9]{3}$",
+                          "examples": [
+                            "30"
+                          ]
+                        },
+                        "ScontoPagamentoAnticipato": {
+                          "type": "string",
+                          "title": "Ammontare dello sconto per pagamento anticipato",
+                          "pattern": "-?[0-9]{1,11}\\.[0-9]{2}"
+                        },
+                        "PenalitaPagamentiRitardati": {
+                          "type": "string",
+                          "title": "Ammontare della penalità dovuta per pagamenti ritardati",
+                          "pattern": "-?[0-9]{1,11}\\.[0-9]{2}"
+                        },
+
+                        "IBAN": {
+                          "type": "string",
+                          "title": "Coordinata bancaria internazionale che consente di identificare, in maniera standard, il conto corrente del beneficiario (International Bank Account Number)",
+                          "pattern": "[a-zA-Z]{2}[0-9]{2}[a-zA-Z0-9]{11,30}"
+                        },
+                        "ABI": {
+                          "type": "string",
+                          "title": "Codice ABI (Associazione Bancaria Italiana)",
+                          "pattern": "[0-9][0-9][0-9][0-9][0-9]"
+                        },
+                        "CAB": {
+                          "type": "string",
+                          "title": "Codice CAB (Codice di Avviamento Bancario)",
+                          "pattern": "[0-9][0-9][0-9][0-9][0-9]"
+                        },
+                        "BIC": {
+                          "type": "string",
+                          "title": "Codice BIC (Bank Identifier Code)",
+                          "pattern": "[A-Z]{6}[A-Z2-9][A-NP-Z0-9]([A-Z0-9]{3}){0,1}"
                         }
-                      }
+                      },
+                      "required": ["ModalitaPagamento", "ImportoPagamento"]
                     }
                   }
                 }
