@@ -1,14 +1,14 @@
 {
   "$schema": "http://json-schema.org/draft-06/schema#",
   "$id": "http://ivaservizi.agenziaentrate.gov.it/docs/xsd/fatture/v1.2",
+  "type": "object",
   "title": "Fattura Elettronica v 1.2",
   "description": "Schema JSON per la Fattura Elettronica Italiana",
-  "type": "object",
   "definitions": {},
   "properties": {
     "FatturaElettronica": {
-      "title": "Fattura Elettronica Italiana",
       "type": "object",
+      "title": "Fattura Elettronica Italiana",
       "properties": {
         "versione": {
            "type": "string",
@@ -18,16 +18,16 @@
            "default": "FPA12"
         },
         "FatturaElettronicaHeader": {
-          "title": "Intestazione della Fattura Elettronica",
           "type": "object",
+          "title": "Intestazione della Fattura Elettronica",
           "properties": {
             "DatiTrasmissione": {
-              "title": "Dati per il recapito del documento elettronico",
               "type": "object",
+              "title": "Dati per il recapito del documento elettronico",
               "properties": {
                 "IdTrasmittente": {
-                  "title": "Identificativo fiscale del soggetto trasmittente",
                   "type": "object",
+                  "title": "Identificativo fiscale del soggetto trasmittente",
                   "properties": {
                     "IdPaese": {
                       "type": "string",
@@ -40,8 +40,8 @@
                       ]
                     },
                     "IdCodice": {
-                      "title": "Numero di identificazione fiscale del soggetto trasmittente (per i soggetti stabiliti nel territorio dello Stato Italiano corrisponde al Codice Fiscale; per i non residenti si fa riferimento all’identificativo fiscale assegnato dall’autorità del paese di residenza)",
                       "type": "string",
+                      "title": "Numero di identificazione fiscale del soggetto trasmittente (per i soggetti stabiliti nel territorio dello Stato Italiano corrisponde al Codice Fiscale; per i non residenti si fa riferimento all’identificativo fiscale assegnato dall’autorità del paese di residenza)",
                       "minLength": 1,
                       "maxLength": 28,
                       "default": "",
@@ -53,8 +53,8 @@
                   "required": ["IdPaese", "IdCodice"]
                 },
                 "ProgressivoInvio": {
-                  "title": "Progressivo che il soggetto trasmittente attribuisce al file che inoltra al Sistema di Interscambio per una propria finalità di identificazione univoca",
                   "type": "string",
+                  "title": "Progressivo che il soggetto trasmittente attribuisce al file che inoltra al Sistema di Interscambio per una propria finalità di identificazione univoca",
                   "minLength": 1,
                   "maxLength": 10,
                   "default": "",
@@ -114,9 +114,9 @@
                   "title": "Dati anagrafici del cedente/prestatore",
                   "properties": {
                     "IdFiscaleIVA": {
+                      "type": "object",
                       "title": "Dati identificativi ai fini IVA del soggetto cedente/prestatore",
                       "description": "Partita IVA italiana per i soggetti residenti in Italia e per quelli esteri operanti in Italia (identificati attraverso una Stabile Organizzazione oppure mediante un rappresentante fiscale o ancora direttamente), oppure identificativo fiscale assegnato dall’autorità del proprio paese per i soggetti non residenti)",
-                      "type": "object",
                       "properties": {
                         "IdPaese": {
                           "type": "string",
@@ -129,8 +129,8 @@
                           ]
                         },
                         "IdCodice": {
-                          "title": "Numero di identificazione fiscale del soggetto cedente/prestatore (per i soggetti stabiliti nel territorio dello Stato Italiano corrisponde al Codice Fiscale; per i non residenti si fa riferimento all’identificativo fiscale assegnato dall’autorità del paese di residenza)",
                           "type": "string",
+                          "title": "Numero di identificazione fiscale del soggetto cedente/prestatore (per i soggetti stabiliti nel territorio dello Stato Italiano corrisponde al Codice Fiscale; per i non residenti si fa riferimento all’identificativo fiscale assegnato dall’autorità del paese di residenza)",
                           "minLength": 1,
                           "maxLength": 28,
                           "default": "",
@@ -185,10 +185,12 @@
                   "additionalProperties": {
                     "CodiceFiscale": {
                       "type": "string",
+                      "title": "Codice fiscale",
                       "pattern": "^[A-Z0-9]{11,16}$"
                     },
                     "AlboProfessionale": {
                       "type": "string",
+                      "title": "Albo professionale d'iscrizione",
                       "maxLength": "60"
                     },
                     "ProvinciaAlbo": {
@@ -202,6 +204,7 @@
                     },
                     "NumeroIscrizioneAlbo": {
                       "type": "string",
+                      "title": "Numero d'iscrizione all'albo professionale",
                       "maxLength": "60"
                     },
                     "DataIscrizioneAlbo": {
@@ -405,6 +408,7 @@
                   "properties": {
                     "Anagrafica": {
                       "type": "object",
+                      "title": "Anagrafica",
                       "properties": {
                         "Denominazione": {
                           "type": "string",
@@ -434,9 +438,9 @@
                   },
                   "additionalProperties": {
                     "IdFiscaleIVA": {
+                      "type": "object",
                       "title": "Dati identificativi ai fini IVA del cessionario/committente; compilare in alternativa non esclusiva a quella del Codice Fiscale (cioè può non essere compilato se è compilato il Codice Fiscale)",
                       "description": "Partita IVA italiana per i soggetti residenti in Italia e per quelli esteri operanti in Italia (identificati attraverso una Stabile Organizzazione oppure mediante un rappresentante fiscale o ancora direttamente), oppure identificativo fiscale assegnato dall’autorità del proprio paese per i soggetti non residenti)",
-                      "type": "object",
                       "properties": {
                         "IdPaese": {
                           "type": "string",
@@ -449,8 +453,8 @@
                           ]
                         },
                         "IdCodice": {
-                          "title": "Numero di identificazione fiscale del soggetto cessionario/committente (per i soggetti stabiliti nel territorio dello Stato Italiano corrisponde al Codice Fiscale; per i non residenti si fa riferimento all’identificativo fiscale assegnato dall’autorità del paese di residenza)",
                           "type": "string",
+                          "title": "Numero di identificazione fiscale del soggetto cessionario/committente (per i soggetti stabiliti nel territorio dello Stato Italiano corrisponde al Codice Fiscale; per i non residenti si fa riferimento all’identificativo fiscale assegnato dall’autorità del paese di residenza)",
                           "minLength": 1,
                           "maxLength": 28,
                           "default": "",
@@ -475,6 +479,7 @@
                 },
                 "Sede": {
                   "type": "object",
+                  "title": "sede",
                   "properties": {
                     "Indirizzo": {
                       "type": "string",
@@ -509,7 +514,7 @@
                     "Nazione": {
                       "type": "string",
                       "title": "Codice della nazione",
-                      "description": "Espresso secondo lo standard ISO 3166-1 alpha-2 code (https://it.wikipedia.org/wiki/ISO_3166-1_alpha-2), es: Italia: IT, Francia: FR, Svizzera: CH, ",
+                      "description": "Espresso secondo lo standard ISO 3166-1 alpha-2 code (https://it.wikipedia.org/wiki/ISO_3166-1_alpha-2), es: Italia: IT, Francia: FR, Svizzera: CH",
                       "pattern": "^[A-Z]{2}$",
                       "default": "",
                       "examples": [
@@ -550,19 +555,19 @@
         },
         "FatturaElettronicaBody": {
           "type": "array",
-          "title": "Dati Generali e Contabili",
+          "title": "Fatture elettroniche",
           "minItems": 1,
           "items": {
-            "title": "Corpo della Fattura Elettronica",
             "type": "object",
+            "title": "Fattura",
             "properties": {
               "DatiGenerali": {
                 "type": "object",
                 "title": "Dati Generali",
                 "properties": {
                   "DatiGeneraliDocumento": {
-                    "title": "Dati Generali del documento",
                     "type": "object",
+                    "title": "Dati Generali del documento",
                     "properties": {
                       "TipoDocumento": {
                         "type": "string",
@@ -608,10 +613,10 @@
                     "additionalProperties": {
                       "Causale": {
                         "type": "array",
-                        "title": "Descrizione della causale del documento",
+                        "title": "Causale del documento",
                         "items": {
                           "type": "string",
-                          "title": "Causale",
+                          "title": "Descrizione della causale",
                           "default": "",
                           "minLength": 1,
                           "maxLength": 200,
@@ -623,7 +628,7 @@
                       },
                       "DatiCassaPrevidenziale": {
                         "type": "array",
-                        "title": "Dati cassa previdenziale",
+                        "title": "Dati casse previdenziali",
                         "items": {
                           "type": "object",
                           "title": "Cassa previdenziale",
@@ -721,9 +726,9 @@
                         "title": "Dati anagrafici del vettore",
                         "properties": {
                           "IdFiscaleIVA": {
+                            "type": "object",
                             "title": "Dati identificativi ai fini IVA del soggetto vettore",
                             "description": "Partita IVA italiana per i soggetti residenti in Italia e per quelli esteri operanti in Italia (identificati attraverso una Stabile Organizzazione oppure mediante un rappresentante fiscale o ancora direttamente), oppure identificativo fiscale assegnato dall’autorità del proprio paese per i soggetti non residenti)",
-                            "type": "object",
                             "properties": {
                               "IdPaese": {
                                 "type": "string",
@@ -736,8 +741,8 @@
                                 ]
                               },
                               "IdCodice": {
-                                "title": "Numero di identificazione fiscale del soggetto vettore (per i soggetti stabiliti nel territorio dello Stato Italiano corrisponde al Codice Fiscale; per i non residenti si fa riferimento all’identificativo fiscale assegnato dall’autorità del paese di residenza)",
                                 "type": "string",
+                                "title": "Numero di identificazione fiscale del soggetto vettore (per i soggetti stabiliti nel territorio dello Stato Italiano corrisponde al Codice Fiscale; per i non residenti si fa riferimento all’identificativo fiscale assegnato dall’autorità del paese di residenza)",
                                 "minLength": 1,
                                 "maxLength": 28,
                                 "default": "",
@@ -795,22 +800,27 @@
                       },
                       "MezzoTrasporto": {
                         "type": "string",
+                        "title": "Mezzo di trasporto",
                         "maxLength": 80
                       },
                       "CausaleTrasporto": {
                         "type": "string",
+                        "title": "Causale di trasporto",
                         "maxLength": 100
                       },
                       "NumeroColli": {
                         "type": "string",
+                        "title": "Numero di colli",
                         "pattern": "^[0-9]{1,4}$"
                       },
                       "Descrizione": {
                         "type": "string",
+                        "title": "Descrizione",
                         "maxLength": 100
                       },
                       "UnitaMisuraPeso": {
                         "type": "string",
+                        "title": "Unità di misura del peso",
                         "maxLength": 10
                       },
                       "PesoLordo": {
@@ -949,9 +959,10 @@
                   },
                   "DatiOrdineAcquisto": {
                     "type": "array",
-                    "title": "Dati relativi all’ordine di acquisto dal quale scaturisce la cessione/prestazione oggetto del documento fattura",
+                    "title": "Dati relativi agli ordini di acquisto",
                     "items": {
-                      "type":"object",
+                      "type": "object",
+                      "title": "Ordine di acquisto dal quale scaturisce la cessione/prestazione oggetto del documento fattura",
                       "properties": {
                         "IdDocumento": {
                           "type": "string",
@@ -960,9 +971,10 @@
                         },
                         "RiferimentoNumeroLinea": {
                           "type": "array",
-                          "title": "Numero identificativo della linea di dettaglio ",
+                          "title": "Numeri identificativi delle linee di dettaglio",
                           "items": {
                             "type": "string",
+                            "title": "Numero linea di dettaglio",
                             "pattern": "^[0-9]{1,4}$",
                             "default": "",
                             "examples": [
@@ -1007,9 +1019,10 @@
                   },
                   "DatiContratto": {
                     "type": "array",
-                    "title": "Dati relativi al contratto dal quale scaturisce la cessione/prestazione oggetto del documento fattura",
+                    "title": "Dati relativi ai contratti",
                     "items": {
-                      "type":"object",
+                      "type": "object",
+                      "title": "Contratto dal quale scaturisce la cessione/prestazione oggetto del documento fattura",
                       "properties": {
                         "IdDocumento": {
                           "type": "string",
@@ -1018,9 +1031,10 @@
                         },
                         "RiferimentoNumeroLinea": {
                           "type": "array",
-                          "title": "Numero identificativo della linea di dettaglio ",
+                          "title": "Numeri identificativi delle linee di dettaglio",
                           "items": {
                             "type": "string",
+                            "title": "Numero linea di dettaglio",
                             "pattern": "^[0-9]{1,4}$",
                             "default": "",
                             "examples": [
@@ -1065,9 +1079,10 @@
                   },
                   "DatiConvenzione": {
                     "type": "array",
-                    "title": "Dati relativi alla convenzione collegata alla fattura",
+                    "title": "Dati relativi alle convenzioni",
                     "items": {
-                      "type":"object",
+                      "type": "object",
+                      "title": "Convenzione collegata alla fattura",
                       "properties": {
                         "IdDocumento": {
                           "type": "string",
@@ -1076,9 +1091,10 @@
                         },
                         "RiferimentoNumeroLinea": {
                           "type": "array",
-                          "title": "Numero identificativo della linea di dettaglio ",
+                          "title": "Numeri identificativi delle linee di dettaglio",
                           "items": {
                             "type": "string",
+                            "title": "Numero linea di dettaglio",
                             "pattern": "^[0-9]{1,4}$",
                             "default": "",
                             "examples": [
@@ -1123,9 +1139,10 @@
                   },
                   "DatiRicezione": {
                     "type": "array",
-                    "title": "Dati relativi alla ricezione dei beni/servizi oggetto del documento fattura",
+                    "title": "Dati relativi alla ricezione dei beni",
                     "items": {
-                      "type":"object",
+                      "type": "object",
+                      "title": "Ricezione dei beni/servizi oggetto del documento fattura",
                       "properties": {
                         "IdDocumento": {
                           "type": "string",
@@ -1134,9 +1151,10 @@
                         },
                         "RiferimentoNumeroLinea": {
                           "type": "array",
-                          "title": "Numero identificativo della linea di dettaglio ",
+                          "title": "Numeri identificativi delle linee di dettaglio",
                           "items": {
                             "type": "string",
+                            "title": "Numero linea di dettaglio",
                             "pattern": "^[0-9]{1,4}$",
                             "default": "",
                             "examples": [
@@ -1181,9 +1199,10 @@
                   },
                   "DatiFattureCollegate": {
                     "type": "array",
-                    "title": "Dati relativi alla fattura alla quale si collega il documento in oggetto",
+                    "title": "Dati relativi alle fatture",
                     "items": {
-                      "type":"object",
+                      "type": "object",
+                      "title": "Fattura collegata",
                       "properties": {
                         "IdDocumento": {
                           "type": "string",
@@ -1192,9 +1211,10 @@
                         },
                         "RiferimentoNumeroLinea": {
                           "type": "array",
-                          "title": "Numero identificativo della linea di dettaglio ",
+                          "title": "Numeri identificativi della linee di dettaglio",
                           "items": {
                             "type": "string",
+                            "title": "Numero linea di dettaglio",
                             "pattern": "^[0-9]{1,4}$",
                             "default": "",
                             "examples": [
@@ -1241,12 +1261,13 @@
                     "type": "array",
                     "title": "Dati relativi al SAL (Stato Avanzamento Lavori)",
                     "items": {
-                      "type":"object",
+                      "type": "object",
+                      "title": "SAL (Stato Avanzamento Lavori)",
                       "properties": {
                         "RiferimentoFase": {
                           "type": "string",
-                          "pattern": "^[0-9]{1-3}$",
                           "title": "Fase dello stato avanzamento cui la fattura si riferisce",
+                          "pattern": "^[0-9]{1,3}$",
                           "default": "",
                           "examples": [
                             1
@@ -1260,7 +1281,8 @@
                     "title": "Dati relativi al DDT (Documento di Trasporto",
                     "description": "Compilare se è presente un documento di trasporto collegato alla fattura, e in caso di fatturazione differita",
                     "items": {
-                      "type":"object",
+                      "type": "object",
+                      "title": "DDT (Documento di Trasporto",
                       "properties": {
                         "NumeroDDT": {
                           "type": "string",
@@ -1283,6 +1305,7 @@
                           "description": "nel caso in cui il documento di trasporto si riferisce all’intera fattura, questo elemento non deve essere valorizzato",
                           "items": {
                             "type": "string",
+                            "title": "Numero linea di dettaglio",
                             "pattern": "^[0-9]{1,4}$",
                             "default": "",
                             "examples": [
@@ -1302,15 +1325,16 @@
                 "properties": {
                   "DettaglioLinee": {
                     "type": "array",
-                    "title": "Linea di dettaglio del bene/servizio",
+                    "title": "Linee di dettaglio del bene/servizio",
                     "minItems": 1,
                     "items": {
                       "type": "object",
+                      "title": "Linea di dettaglio",
                       "properties": {
                         "NumeroLinea": {
                           "type": "string",
+                          "title": "Numero identificativo della linea di dettaglio",
                           "pattern": "^[0-9]{1,4}$",
-                          "title": "Numero identificativo della linea di dettaglio ",
                           "default": "",
                           "examples": [
                             1
@@ -1435,7 +1459,7 @@
                               },
                               "CodiceValore": {
                                 "type": "string",
-                                "title": "Valore del codice articolo corrispondente alla tipologia ",
+                                "title": "Valore del codice articolo corrispondente alla tipologia",
                                 "default": "",
                                 "minLength": 1,
                                 "maxLength": 35
