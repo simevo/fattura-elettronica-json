@@ -11,11 +11,11 @@
       "title": "Fattura Elettronica Italiana",
       "properties": {
         "versione": {
-           "type": "string",
-           "title": "Versione documento",
-           "description": "FPR12: Fattura tra Privati, FPA12: Fattura verso Pubblica Amministrazione",
-           "pattern": "^FP(A|R)12$",
-           "default": "FPA12"
+          "type": "string",
+          "title": "Versione documento",
+          "description": "FPR12: Fattura tra Privati, FPA12: Fattura verso Pubblica Amministrazione",
+          "pattern": "^FP(A|R)12$",
+          "default": "FPA12"
         },
         "FatturaElettronicaHeader": {
           "type": "object",
@@ -388,7 +388,7 @@
                     }
                   }
                 },
-                "Contatti":{},
+                "Contatti": {},
                 "RiferimentoAmministrazione": {
                   "type": "string",
                   "title": "Eventuale riferimento utile al destinatario per automatizzare la gestione amministrativa dell’operazione in fattura",
@@ -559,7 +559,7 @@
           "minItems": 1,
           "items": {
             "type": "object",
-            "title": "Fattura",
+            "title": "Corpo della Fattura Elettronica",
             "properties": {
               "DatiGenerali": {
                 "type": "object",
