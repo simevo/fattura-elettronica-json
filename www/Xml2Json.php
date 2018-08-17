@@ -50,6 +50,9 @@ final class Xml2Json
     {
         // defend against XML External Entity Injection
         libxml_disable_entity_loader(true);
+        if (!file_exists($filename)) {
+            throw new \InvalidArgumentException('File not found');
+        }
         $xml_string = file_get_contents($filename);
         $collapsed_xml_string = preg_replace("/\s+/", "", $xml_string);
         $collapsed_xml_string = $collapsed_xml_string ? $collapsed_xml_string : $xml_string;
