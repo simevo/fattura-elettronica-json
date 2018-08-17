@@ -66,92 +66,92 @@ final class Xml2JsonTest extends PHPUnit\Framework\TestCase
         $this->validateSample('samples/IT01234567890_FPR03.xml');
     }
 
-    public function testInalidateSampleMissingCedentePrestatore(): void
+    public function testInvalidateSampleMissingCedentePrestatore(): void
     {
         $this->validateSample('invalid/missing_CedentePrestatore.xml', false);
     }
 
-    public function testInalidateSampleMissingCessionarioCommittente(): void
+    public function testInvalidateSampleMissingCessionarioCommittente(): void
     {
         $this->validateSample('invalid/missing_CessionarioCommittente.xml', false);
     }
 
-    public function testInalidateSampleMissingCodiceDestinatario(): void
+    public function testInvalidateSampleMissingCodiceDestinatario(): void
     {
         $this->validateSample('invalid/missing_CodiceDestinatario.xml', false);
     }
 
-    public function testInalidateSampleMissingDatiBeniServizi(): void
+    public function testInvalidateSampleMissingDatiBeniServizi(): void
     {
         $this->validateSample('invalid/missing_DatiBeniServizi.xml', false);
     }
 
-    public function testInalidateSampleMissingDatiGeneraliDocumentoData(): void
+    public function testInvalidateSampleMissingDatiGeneraliDocumentoData(): void
     {
         $this->validateSample('invalid/missing_DatiGeneraliDocumento_Data.xml', false);
     }
 
-    public function testInalidateSampleMissingDatiGeneraliDocumentoDivisa(): void
+    public function testInvalidateSampleMissingDatiGeneraliDocumentoDivisa(): void
     {
         $this->validateSample('invalid/missing_DatiGeneraliDocumento_Divisa.xml', false);
     }
 
-    public function testInalidateSampleMissingDatiGeneraliDocumentoNumero(): void
+    public function testInvalidateSampleMissingDatiGeneraliDocumentoNumero(): void
     {
         $this->validateSample('invalid/missing_DatiGeneraliDocumento_Numero.xml', false);
     }
 
-    public function testInalidateSampleMissingDatiGeneraliDocumentoTipoDocumento(): void
+    public function testInvalidateSampleMissingDatiGeneraliDocumentoTipoDocumento(): void
     {
         $this->validateSample('invalid/missing_DatiGeneraliDocumento_TipoDocumento.xml', false);
     }
 
-    public function testInalidateSampleMissingDatiGeneraliDocumento(): void
+    public function testInvalidateSampleMissingDatiGeneraliDocumento(): void
     {
         $this->validateSample('invalid/missing_DatiGeneraliDocumento.xml', false);
     }
 
-    public function testInalidateSampleMissingDatiGenerali(): void
+    public function testInvalidateSampleMissingDatiGenerali(): void
     {
         $this->validateSample('invalid/missing_DatiGenerali.xml', false);
     }
 
-    public function testInalidateSampleMissingDatiTrasmissione(): void
+    public function testInvalidateSampleMissingDatiTrasmissione(): void
     {
         $this->validateSample('invalid/missing_DatiTrasmissione.xml', false);
     }
 
-    public function testInalidateSampleMissingFatturaElettronicaBody(): void
+    public function testInvalidateSampleMissingFatturaElettronicaBody(): void
     {
         $this->validateSample('invalid/missing_FatturaElettronicaBody.xml', false);
     }
 
-    public function testInalidateSampleMissingFatturaElettronicaHeader(): void
+    public function testInvalidateSampleMissingFatturaElettronicaHeader(): void
     {
         $this->validateSample('invalid/missing_FatturaElettronicaHeader.xml', false);
     }
 
-    public function testInalidateSampleMissingFormatoTrasmissione(): void
+    public function testInvalidateSampleMissingFormatoTrasmissione(): void
     {
         $this->validateSample('invalid/missing_FormatoTrasmissione.xml', false);
     }
 
-    public function testInalidateSampleMissingIdTrasmittenteIdCodice(): void
+    public function testInvalidateSampleMissingIdTrasmittenteIdCodice(): void
     {
         $this->validateSample('invalid/missing_IdTrasmittente_IdCodice.xml', false);
     }
 
-    public function testInalidateSampleMissingIdTrasmittenteIdPaese(): void
+    public function testInvalidateSampleMissingIdTrasmittenteIdPaese(): void
     {
         $this->validateSample('invalid/missing_IdTrasmittente_IdPaese.xml', false);
     }
 
-    public function testInalidateSampleMissingIdTrasmittente(): void
+    public function testInvalidateSampleMissingIdTrasmittente(): void
     {
         $this->validateSample('invalid/missing_IdTrasmittente.xml', false);
     }
 
-    public function testInalidateSampleMissingProgressivoInvio(): void
+    public function testInvalidateSampleMissingProgressivoInvio(): void
     {
         $this->validateSample('invalid/missing_ProgressivoInvio.xml', false);
     }
