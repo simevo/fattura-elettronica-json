@@ -63,7 +63,7 @@ final class Xml2Json
         libxml_use_internal_errors(true);
         $this->xml = simplexml_load_string($xml_string, 'SimpleXMLElement', LIBXML_NOWARNING);
         if ($this->xml === false) {
-            throw new \InvalidArgumentException("Cannot load xml file.\n");
+            throw new \InvalidArgumentException("Cannot load XML\n");
         }
         // convert back and forth to transform SimpleXMLElement Objects to associative arrays
         $json = json_encode($this->xml);
