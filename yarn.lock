@@ -244,27 +244,27 @@ js-yaml@^3.12.1:
     argparse "^1.0.7"
     esprima "^4.0.0"
 
-jshint@^2.11.0:
-  version "2.11.0"
-  resolved "https://registry.yarnpkg.com/jshint/-/jshint-2.11.0.tgz#7f3d99820b8b653eaaec7015a563b2d8101cbbc8"
-  integrity sha512-ooaD/hrBPhu35xXW4gn+o3SOuzht73gdBuffgJzrZBJZPGgGiiTvJEgTyxFvBO2nz0+X1G6etF8SzUODTlLY6Q==
+jshint@^2.12.0:
+  version "2.12.0"
+  resolved "https://registry.yarnpkg.com/jshint/-/jshint-2.12.0.tgz#52e75bd058d587ef81a0e2f95e5cf18eb5dc5c37"
+  integrity sha512-TwuuaUDmra0JMkuqvqy+WGo2xGHSNjv1BA1nTIgtH2K5z1jHuAEeAgp7laaR+hLRmajRjcrM71+vByBDanCyYA==
   dependencies:
     cli "~1.0.0"
     console-browserify "1.1.x"
     exit "0.1.x"
     htmlparser2 "3.8.x"
-    lodash "~4.17.11"
+    lodash "~4.17.19"
     minimatch "~3.0.2"
     shelljs "0.3.x"
     strip-json-comments "1.0.x"
 
-json-schema-faker@^0.5.0-rcv.24:
-  version "0.5.0-rcv.24"
-  resolved "https://registry.yarnpkg.com/json-schema-faker/-/json-schema-faker-0.5.0-rcv.24.tgz#be2d998514bc4b633a1809c5ab3b5c7eef5dee4c"
-  integrity sha512-qwuRwv7dnUdqdwuifb6kJAVUKm0mzi4h/mzvMwDKxyWUzjxFCdVH/g9IfKxvc4M7rvAavr8pcx9uO1PNIIWE0g==
+json-schema-faker@^0.5.0-rcv.29:
+  version "0.5.0-rcv.29"
+  resolved "https://registry.yarnpkg.com/json-schema-faker/-/json-schema-faker-0.5.0-rcv.29.tgz#ecc06fe91c1b2707210e07755464cdfb4cc045de"
+  integrity sha512-oc1Jlep1+4HqWEfSOIEzT5630yfe8xSbTSdWcQ18+tbyoEIdSAeyGVH+qh0kIJkFnapAU2VFW7vqJr7WAu4KwQ==
   dependencies:
     json-schema-ref-parser "^6.1.0"
-    jsonpath-plus "^2.0.0"
+    jsonpath-plus "^3.0.0"
     randexp "^0.5.3"
 
 json-schema-ref-parser@^6.1.0:
@@ -281,15 +281,15 @@ json-schema@^0.2.5:
   resolved "https://registry.yarnpkg.com/json-schema/-/json-schema-0.2.5.tgz#97997f50972dd0500214e208c407efa4b5d7063b"
   integrity sha512-gWJOWYFrhQ8j7pVm0EM8Slr+EPVq1Phf6lvzvD/WCeqkrx/f2xBI0xOsRRS9xCn3I4vKtP519dvs3TP09r24wQ==
 
-jsonpath-plus@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/jsonpath-plus/-/jsonpath-plus-2.0.0.tgz#3ebf30b79e2262d69826084ba03c406a9de440a0"
-  integrity sha512-ksXaz9+3SIZ5BMxgr7MQueYcR515VRZPuoDhIymUd1JcF6BnVaYJS7k4NJni4EHhvJaOIGGiPqT8+ifsGp6mBw==
+jsonpath-plus@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/jsonpath-plus/-/jsonpath-plus-3.0.0.tgz#194ab4792a5e9b4ed27bf442188c8eb7e697a04b"
+  integrity sha512-WQwgWEBgn+SJU1tlDa/GiY5/ngRpa9yrSj8n4BYPHcwoxTDaMEaYCHMOn42hIHHDd3CrUoRr3+HpsK0hCKoxzA==
 
-lodash@~4.17.11:
-  version "4.17.19"
-  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.19.tgz#e48ddedbe30b3321783c5b4301fbd353bc1e4a4b"
-  integrity sha512-JNvd8XER9GQX0v2qJgsaN/mzFCNA5BRe/j8JN9d+tWyGLSodKQHKFicdwNYzWwI3wjRnaKPsGj1XkBjx/F96DQ==
+lodash@~4.17.19:
+  version "4.17.20"
+  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.20.tgz#b44a9b6297bcb698f1c51a3545a2b3b368d59c52"
+  integrity sha512-PlhdFcillOINfeV7Ni6oF1TAEayyZBoZ8bcshTHqOYJYlrqzRK5hagpagky5o4HfCzzd1TRkXPMFq6cKk9rGmA==
 
 minimatch@^3.0.4, minimatch@~3.0.2:
   version "3.0.4"
