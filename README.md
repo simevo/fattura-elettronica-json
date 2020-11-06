@@ -6,7 +6,7 @@
 
 Le fatture elettroniche vengono trasmesse ed archiviate in formato **XML**.
 
-La documentazione tecnica di riferimento del **formato XML** delle fatture elettroniche è disponibile al seguente url: http://www.fatturapa.gov.it/export/fatturazione/it/normativa/f-2.htm
+La documentazione tecnica di riferimento del **formato XML** delle fatture elettroniche è disponibile al seguente url: https://www.fatturapa.gov.it/it/norme-e-regole/documentazione-fatturapa/
 
 Poiché per lo sviluppo di API ed SDK è più comodo manipolare i dati in formato **JSON**, questo proof-of-concept mira a valutare la fattibilità di:
 - **convertire** XML <-> JSON
@@ -29,10 +29,13 @@ La procedura seguita per il proof-of-concept è rappresentata nel seguente flow-
 
 ![Flow-chart](flowchart.png "Flow-chart del proof-of-concept")
 
-Innanzitutto lo [schema XML (*XSD**)](https://en.wikipedia.org/wiki/XML_Schema_(W3C)) della fattura elettronica tratto dal sito `fatturapa.gov.it` ([`Schema_del_file_xml_FatturaPA_versione_1.2.xsd`](Schema_del_file_xml_FatturaPA_versione_1.2.xsd)) è stato trasformato in una versione ([`Schema_del_file_xml_FatturaPA_versione_1.2_cleanup.xsd`](Schema_del_file_xml_FatturaPA_versione_1.2_cleanup.xsd)) normalizzata (fromdos, xmllint, 2-space indent) e che importa una [copia locale dello schema `xmldsig`](xmldsig-core-schema.xsd):
+Innanzitutto lo [schema XML (*XSD**)](https://en.wikipedia.org/wiki/XML_Schema_(W3C)) della fattura elettronica tratto dal sito `fatturapa.gov.it` ([`Schema del file xml FatturaPA versione 1.2.1a.xsd`](Schema del file xml FatturaPA versione 1.2.1a.xsd)) è stato trasformato in una versione ([`Schema_del_file_xml_FatturaPA_versione_1.2.1a_cleanup.xsd`](Schema_del_file_xml_FatturaPA_versione_1..1_cleanup.xsd)) normalizzata (fromdos, xmllint, 2-space indent) e che importa una [copia locale dello schema `xmldsig`](xmldsig-core-schema.xsd):
 ```
--   <xs:import namespace="http://www.w3.org/2000/09/xmldsig#" schemaLocation="http://www.w3.org/TR/2002/REC-xmldsig-core-20020212/xmldsig-core-schema.xsd" />
-+   <xs:import namespace="http://www.w3.org/2000/09/xmldsig#" schemaLocation="xmldsig-core-schema.xsd"/>
+3c3,4
+<   <xs:import namespace="http://www.w3.org/2000/09/xmldsig#" schemaLocation="http://www.w3.org/TR/2002/REC-xmldsig-core-20020212/xmldsig-core-schema.xsd"/>
+---
+>   <xs:import namespace="http://www.w3.org/2000/09/xmldsig#" schemaLocation="xmldsig-core-schema.xsd"/>
+> 
 ```
 
 Le fatture in formato JSON possono essere validate per mezzo di un **JSON schema** (vedi [paragrafo Riferimenti](#riferimenti)), anche se quest'ultimo è più limitato dello schema XML, alcuni vincoli dovranno essere validati dall'applicazione, ad esempio:
@@ -63,7 +66,7 @@ Le fatture in formato JSON possono essere validate per mezzo di un **JSON schema
 
 Inizialmente si è tentato di convertire lo schema XSD in uno [schema JSON](http://json-schema.org/) usando la libreria [jgeXml](https://github.com/Mermade/jgeXml):
 ```
-nodejs ./node_modules/jgexml/testxsd2j.js Schema_del_file_xml_FatturaPA_versione_1.2.xsd  > fatturaPA_1.2_schema.json
+nodejs ./node_modules/jgexml/testxsd2j.js Schema del file xml FatturaPA versione 1.2.1a.xsd  > fatturaPA_1.2.1a_schema.json
 ```
 ottenendo però uno schema non utilizzabile.
 
