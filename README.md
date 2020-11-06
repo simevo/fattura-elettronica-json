@@ -72,7 +72,9 @@ ottenendo però uno schema non utilizzabile.
 
 Successivamente i files XML di esempio sono stati convertiti a JSON per mezzo della libreria javascript [node-xml2json](https://github.com/buglabs/node-xml2json) (script [`bin/convert_samples.sh`](bin/convert_samples.sh)).
 
-La liberia xml2json [non è supportata nel browser](https://github.com/buglabs/node-xml2json/issues/97) quindi per i client la conversione va fatta server side con lo script PHP [`www/xml2json.php`](www/xml2json.php), ad esempio:
+La liberia xml2json [non è supportata nel browser](https://github.com/buglabs/node-xml2json/issues/97). Nel browser si può usare invece a libreria più semplice [x2js](https://github.com/Axinom/x2js), vedi lo script `bin/xml2json_x2js.js`.
+
+Oppure la conversione si può fare server-side con lo script PHP [`www/xml2json.php`](www/xml2json.php), ad esempio:
 ```
 curl -X POST -F 'xml=@samples/IT01234567890_FPA01.xml' http://localhost:8000/xml2json.php
 ```
